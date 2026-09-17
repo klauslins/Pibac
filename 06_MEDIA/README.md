@@ -9,6 +9,34 @@ atualizado: 2026-09-10
 
 # 06_MEDIA — Banco de mídia
 
+
+## O acervo — como está organizado
+
+`fotos/originais/` guarda uma pasta por sessão, nomeada **`aaaa-mm-dd-evento`**:
+
+```
+2026-09-13-culto-celebracao/
+2026-08-22-casa-viver/
+2026-08-09-ebd/
+```
+
+A data é a de **captura**, lida do EXIF (`DateTimeOriginal`) — não a do arquivo.
+As duas divergem: o cartão costuma ser descarregado de madrugada, às vezes no dia
+seguinte. Ordenar por data de captura é o que faz a pasta responder "que domingo
+foi esse" sem ninguém abrir nada.
+
+Os nomes dos arquivos são os da câmera (`AKZ09228.jpg`) e ficam como estão: já
+são minúsculos, sem acento, e preservam a sequência da captação.
+
+> [!IMPORTANT]
+> **Este acervo está fora do Git** (`06_MEDIA/fotos/originais/` no `.gitignore`).
+> São 19 GB e o repositório é público — foto de culto tem rosto de gente, e
+> criança só aparece com autorização (`AGENTS.md` §2.8). O acervo vive no SSD.
+
+`_a-triar/` é quarentena: export de Photoshop, projeto de After Effects e PNG com
+nome sem significado que estavam misturados às fotos. Nada foi apagado — está
+tudo lá esperando triagem, com a origem registrada em `migracao-2026-09-17.csv`.
+
 > **Matéria-prima audiovisual.** Foto, vídeo e áudio do cliente — o que foi
 > captado e já está tratado.
 

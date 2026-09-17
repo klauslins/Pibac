@@ -16,6 +16,24 @@ Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.0.0/).
 
 ## [Não publicado]
 
+### Organizado — 17/09/2026
+- **Acervo de fotos migrado para `06_MEDIA/fotos/originais/`** — 2.542 arquivos,
+  19 GB, que estavam em `Pibac/` na raiz do SSD em pastas numeradas de 2 a 15
+- Cada sessão virou `aaaa-mm-dd-evento`, com a data lida do EXIF
+  `DateTimeOriginal`. A data do arquivo não serve: o cartão era descarregado de
+  madrugada, às vezes no dia seguinte, o que fazia duas sessões de domingo
+  parecerem de segunda-feira
+- O horário de captura confirmou o que cada pasta é: 18h–20h é Culto de
+  Celebração; a pasta `10` era **EBD** (9h28–10h15), não culto
+- A pasta `11` tinha três datas misturadas e foi separada por captura
+- 115 fotos soltas na raiz de `culto de domingo/` eram o culto de **31/05**
+- 103 itens sem valor de acervo (export de Photoshop, projeto de After Effects,
+  PNG com nome sem significado) foram para `_a-triar/`. **Nada foi apagado**
+- `migracao-2026-09-17.csv` registra origem e destino de cada um dos 403
+  movimentos, para que tudo seja reversível
+- PSD de 176 MB para `08_MASTERS/` (acima de 100 MB, fora do Git); molde de vídeo
+  de Missões para `04_PRODUCTION/missoes/fontes/`
+
 ### Adicionado — 17/09/2026
 - **Skill `comunicacao-pibac`** em `.claude/skills/` — o agente oficial de
   comunicação da igreja, a partir do prompt mestre de 30 seções. Carrega sozinha

@@ -65,7 +65,14 @@ ISENTOS = [
     "00_BRAND/tipografia/",   # fontes de terceiros: nome técnico tem significado
     "_META/",
     ".git/",
+    ".claude/",               # skills: o Claude Code define os nomes
     ".github/",               # workflows e templates seguem a convenção do GitHub
+    # Captação bruta. O nome vem da câmera (AKZ09228.jpg) e é ele que preserva a
+    # sequência do que foi fotografado. A convenção de nomenclatura existe para
+    # o que vai ao ar — arquivo bruto não é entregável, e renomear em massa aqui
+    # destruiria a única ordem confiável do acervo.
+    "06_MEDIA/fotos/originais/",
+    "06_MEDIA/videos/brutos/",
 ]
 
 # Artefatos gerados por ferramenta. O nome é definido pela ferramenta e está
