@@ -137,6 +137,7 @@ que horas, onde**.
 | Vídeo bruto | `06_MEDIA/videos/brutos/` *(fora do Git)* |
 | Vídeo editado (PIBAC TV, cortes de mensagem) | `06_MEDIA/videos/editados/` |
 | Roteiro de vídeo | `03_CONTENT/roteiros/[YYYY-MM]/` |
+| Roteiro de cobertura de um culto | `03_CONTENT/roteiros/[YYYY-MM]/roteiro-cobertura-[aaaa-mm-dd].md` |
 | Copy para social | `03_CONTENT/copy/social/` |
 | Texto do informativo mensal | `03_CONTENT/copy/email/` |
 | Documento de visão, missão ou identidade | `01_STRATEGY/[categoria]/` |
@@ -244,6 +245,8 @@ bash _META/automacao/publish-pipeline.sh [campanha]
 | Que cor, fonte ou logo usar numa peça? | `00_BRAND/design-system.md` |
 | O valor exato de uma cor ou medida | `00_BRAND/tokens/tokens.json` — **a única fonte** |
 | Como escrever para esta igreja? | `01_STRATEGY/guia-de-conteudo/` |
+| Como cobrir um culto em Stories? | `01_STRATEGY/guia-de-conteudo/manual-stories-culto.md` |
+| O roteiro para usar durante o culto | `03_CONTENT/roteiros/_modelo-cobertura-culto.md` |
 | Quais assets existem e qual o status? | `_META/automacao/manifest.json` |
 | Quais formatos e specs por canal? | `_META/automacao/pipeline-config.json` |
 | Quem autorizou uso de imagem? | `01_STRATEGY/_fontes/autorizacoes-de-imagem/` |

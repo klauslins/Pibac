@@ -139,6 +139,22 @@ logo-h-oficial-v1.svg
 
 ---
 
+## 📱 Cobertura de culto
+
+O material mais usado da semana. Duas peças, com funções diferentes:
+
+| Arquivo | Para quê |
+|---|---|
+| [`manual-stories-culto.md`](01_STRATEGY/guia-de-conteudo/manual-stories-culto.md) | **O manual.** O porquê, o padrão e o que é regra. Lê-se uma vez |
+| [`_modelo-cobertura-culto.md`](03_CONTENT/roteiros/_modelo-cobertura-culto.md) | **O roteiro.** Uma página, em ordem de acontecimento, para usar com o celular na mão |
+
+A cada culto, copie o roteiro para
+`03_CONTENT/roteiros/[ano-mes]/roteiro-cobertura-[aaaa-mm-dd].md`, preencha o
+cabeçalho e vá marcando. O que sobra no fim da semana é um registro do que foi
+gravado — e do que faltou.
+
+---
+
 ## 🎨 Design System
 
 A identidade visual mora em [`00_BRAND/`](00_BRAND/) e o índice é
@@ -197,6 +213,7 @@ Claude Code, Cursor e similares.
 |---|---|
 | Repositório criado | ✅ 17/09/2026 |
 | Briefing | 🟡 parcial — levantado do site, falta onboarding |
+| Cobertura de culto | ✅ manual e roteiro prontos para uso |
 | Design system | 🟡 esqueleto pronto — decisões de cor e tipografia pendentes |
 | Identidade visual | ⏳ `00_BRAND/logo/` vazio, aguardando os vetores originais |
 | Estratégia de conteúdo | ⏳ |

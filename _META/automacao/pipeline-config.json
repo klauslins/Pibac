@@ -1,7 +1,7 @@
 {
   "$schema": "https://akza.tech/schemas/pipeline-config/v1",
   "version": "1.0.0",
-  "project_id": "PIB-Aguas-Claras",
+  "project_id": "Pibac",
   "updated_at": "2026-09-17",
   "directories": {
     "brand": "00_BRAND",

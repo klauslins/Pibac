@@ -20,7 +20,7 @@ aquele arquivo, para você não precisar abrir todos para descobrir.
 Se você é um agente: leia [`AGENTS.md`](../AGENTS.md) primeiro — ele tem as
 regras e o contexto da marca. Este índice é o passo seguinte.
 
-**24 documentos.**
+**26 documentos.**
 
 ---
 
@@ -31,6 +31,15 @@ regras e o contexto da marca. Este índice é o passo seguinte.
 | [Briefing](../01_STRATEGY/briefing-cliente.md) | precisar do contexto geral da igreja |
 | [AGENTS.md](../AGENTS.md) | sempre, antes de qualquer tarefa neste projeto |
 | [Primeira Igreja Batista em Águas Claras](../README.md) | quiser a visao geral do projeto, sendo gente |
+
+---
+
+## Como escrever
+
+| Documento | Use quando |
+|---|---|
+| [Manual de Stories — cobertura de culto](../01_STRATEGY/guia-de-conteudo/manual-stories-culto.md) | for cobrir um culto, ou orientar quem vai cobrir pela primeira vez |
+| [Roteiro de cobertura de culto (modelo)](../03_CONTENT/roteiros/_modelo-cobertura-culto.md) | for cobrir um culto — copie este arquivo e use durante o culto |
 
 ---
 

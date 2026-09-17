@@ -17,6 +17,17 @@ Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.0.0/).
 ## [Não publicado]
 
 ### Adicionado — 17/09/2026
+- **Manual de Stories para cobertura de culto**, a partir do
+  `Guia de Stories — Missão e Mídia` (15 páginas, PDF). Os três "modelos" do
+  original eram a mesma sequência com redação diferente — viraram **uma**
+  sequência de seis blocos, com as variações preservadas onde são úteis
+  (falas de abertura e de encerramento)
+- `03_CONTENT/roteiros/_modelo-cobertura-culto.md` — o roteiro de uso, uma
+  página, em ordem de acontecimento e com horário relativo à hora do culto. É
+  copiado a cada culto e preenchido durante
+- Acrescentado ao original o que faltava e que aqui é obrigatório: **autorização
+  de imagem no bloco Kids**, com a alternativa de registro sem identificar
+  ninguém, e o caminho do arquivo depois do culto até `_PUBLISH-READY/`
 - **Esqueleto do design system em `00_BRAND/`**, para o Klaus preencher com as
   decisões de design. Nenhuma cor, fonte ou medida de marca foi decidida aqui
 - `design-system.md`, `cores/paleta.md`, `tipografia/tipografia.md`,
