@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Design System — PIBAC</title>
+<!-- Gerado por _META/automacao/gerar-tokens.py. Não existe até a paleta e a
+     tipografia serem decididas no tokens.json. -->
+<link rel="stylesheet" href="tokens/tokens.css">
+<style>
+  :root { color-scheme: light; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; padding: 32px 16px 96px;
+    font: 16px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    color: #1a1a1a; background: #fafafa;
+  }
+  .wrap { max-width: 900px; margin: 0 auto; }
+  h1 { font-size: 1.75rem; margin: 0 0 4px; letter-spacing: -0.02em; }
+  .sub { color: #6a6a6a; margin: 0 0 32px; font-size: 0.9rem; }
+  h2 {
+    font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.12em;
+    color: #6a6a6a; margin: 48px 0 16px; padding-bottom: 8px;
+    border-bottom: 1px solid #e4e4e4;
+  }
+  .aviso {
+    border: 1px solid #e0c200; background: #fffbe6; border-radius: 12px;
+    padding: 20px 24px; margin-bottom: 8px;
+  }
+  .aviso h3 { margin: 0 0 8px; font-size: 1rem; }
+  .aviso p { margin: 0 0 8px; font-size: 0.9rem; line-height: 1.6; }
+  .aviso code {
+    background: #1a1a1a; color: #fff; padding: 3px 8px;
+    border-radius: 5px; font-size: 0.85em;
+  }
+  .grade { display: grid; gap: 12px; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); }
+  .amostra {
+    border: 1px solid #e4e4e4; border-radius: 10px; overflow: hidden; background: #fff;
+  }
+  .chip { height: 72px; display: grid; place-items: center; font-size: 0.7rem; color: #999; }
+  .chip.vazio {
+    background: repeating-linear-gradient(45deg, #f4f4f4, #f4f4f4 6px, #ebebeb 6px, #ebebeb 12px);
+  }
+  .rotulo { padding: 8px 10px; font-size: 0.72rem; line-height: 1.45; }
+  .rotulo b { display: block; font-weight: 600; }
+  .rotulo span { color: #8a8a8a; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; }
+  .linha { border: 1px solid #e4e4e4; border-radius: 10px; background: #fff; padding: 16px 20px; margin-bottom: 8px; }
+  .linha .meta { font-size: 0.7rem; color: #8a8a8a; font-family: ui-monospace, Menlo, monospace; margin-bottom: 6px; }
+  .barra { background: #1a1a1a; height: 14px; border-radius: 3px; }
+  .caixa { border: 1px solid #e4e4e4; background: #fff; height: 64px; }
+  .vazio-txt { color: #b0b0b0; font-style: italic; }
+  footer { margin-top: 64px; font-size: 0.8rem; color: #8a8a8a; line-height: 1.7; }
+  footer a { color: #1a1a1a; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <h1>Design System — PIBAC</h1>
+  <p class="sub">Primeira Igreja Batista em Águas Claras · o sistema aplicado, lido direto dos tokens</p>
+
+  <div id="aviso"></div>
+
+  <h2>Cor</h2>
+  <div class="grade" id="cores"></div>
+
+  <h2>Tipografia</h2>
+  <div id="tipo"></div>
+
+  <h2>Espaçamento</h2>
+  <div id="espaco"></div>
+
+  <h2>Raio de canto</h2>
+  <div class="grade" id="raio"></div>
+
+  <h2>Sombra</h2>
+  <div class="grade" id="sombra"></div>
+
+  <footer>
+    Esta página não tem valor nenhum escrito dentro dela — ela lê as variáveis de
+    <code>tokens/tokens.css</code>, que sai de <code>tokens/tokens.json</code>.<br>
+    Mudou uma cor? Mude no JSON, rode <code>python3 _META/automacao/gerar-tokens.py</code> e recarregue aqui.<br>
+    Documentação: <a href="design-system.md">design-system.md</a>
+  </footer>
+
+</div>
+
+<script>
+const raiz = getComputedStyle(document.documentElement);
+const ler = n => raiz.getPropertyValue('--pibac-' + n).trim();
+
+const CORES = [
+  ['cor-marca-primaria','Primária'], ['cor-marca-secundaria','Secundária'],
+  ['cor-marca-apoio','Apoio'], ['cor-profunda-primaria','Primária profunda'],
+  ['cor-neutra-clara','Neutra clara'], ['cor-neutra-media','Neutra média'],
+  ['cor-neutra-escura','Neutra escura'], ['cor-texto-padrao','Texto'],
+  ['cor-texto-suave','Texto suave'], ['cor-texto-invertido','Texto invertido'],
+  ['cor-fundo-claro','Fundo claro'], ['cor-fundo-escuro','Fundo escuro'],
+];
+const TAMANHOS = ['5xl','4xl','3xl','2xl','xl','lg','md','sm','xs'];
+const ESPACOS = ['1','2','3','4','6','8','12','16','24'];
+const RAIOS = ['sm','md','lg','xl','pilula'];
+const SOMBRAS = ['suave','media'];
+
+const definido = ler('cor-marca-primaria') !== '';
+
+document.getElementById('aviso').innerHTML = definido ? '' : `
+  <div class="aviso">
+    <h3>⏳ O sistema ainda não foi decidido</h3>
+    <p>As variáveis de cor e tipografia não existem porque
+       <code>tokens/tokens.css</code> ainda não foi gerado — e ele não é gerado
+       enquanto houver valor <code>null</code> em <code>tokens/tokens.json</code>.</p>
+    <p>Decida as cores e as famílias tipográficas no JSON e rode:</p>
+    <p><code>python3 _META/automacao/gerar-tokens.py</code></p>
+    <p>O script lista exatamente o que falta. Recarregue esta página depois —
+       tudo abaixo se preenche sozinho.</p>
+  </div>`;
+
+// ── Cor ──
+document.getElementById('cores').innerHTML = CORES.map(([t, nome]) => {
+  const v = ler(t);
+  return `<div class="amostra">
+    <div class="chip ${v ? '' : 'vazio'}" style="${v ? `background:${v}` : ''}">${v ? '' : 'a definir'}</div>
+    <div class="rotulo"><b>${nome}</b><span>${v || '--pibac-' + t}</span></div>
+  </div>`;
+}).join('');
+
+// ── Tipografia ──
+const display = ler('fonte-familia-display');
+const texto = ler('fonte-familia-texto');
+document.getElementById('tipo').innerHTML =
+  `<div class="linha">
+     <div class="meta">fonte.familia.display — ${display || 'a definir'}</div>
+     <div style="font-family:${display || 'Georgia, serif'};font-size:2rem;line-height:1.1;${display ? '' : 'color:#b0b0b0'}">
+       Ser uma igreja de verdadeiros discípulos discipuladores
+     </div>
+   </div>
+   <div class="linha">
+     <div class="meta">fonte.familia.texto — ${texto || 'a definir'}</div>
+     <div style="font-family:${texto || 'inherit'};${texto ? '' : 'color:#b0b0b0'}">
+       Culto de Celebração · domingo, 18h · Rua Jerivá, nº 5, Águas Claras
+     </div>
+   </div>` +
+  TAMANHOS.map(t => {
+    const v = ler('fonte-tamanho-' + t);
+    return `<div class="linha">
+      <div class="meta">fonte.tamanho.${t} — ${v || 'não gerado'}</div>
+      <div style="font-size:${v || '1rem'};font-family:${display || 'inherit'};line-height:1.1">
+        Águas Claras
+      </div>
+    </div>`;
+  }).join('');
+
+// ── Espaço ──
+document.getElementById('espaco').innerHTML = ESPACOS.map(t => {
+  const v = ler('espaco-' + t);
+  return `<div class="linha">
+    <div class="meta">espaco.${t} — ${v || 'não gerado'}</div>
+    <div class="barra" style="width:${v || '1rem'}"></div>
+  </div>`;
+}).join('');
+
+// ── Raio ──
+document.getElementById('raio').innerHTML = RAIOS.map(t => {
+  const v = ler('raio-' + t);
+  return `<div class="amostra" style="border:0">
+    <div class="caixa" style="border-radius:${v || '0'}"></div>
+    <div class="rotulo"><b>raio.${t}</b><span>${v || 'não gerado'}</span></div>
+  </div>`;
+}).join('');
+
+// ── Sombra ──
+document.getElementById('sombra').innerHTML = SOMBRAS.map(t => {
+  const v = ler('sombra-' + t);
+  return `<div class="amostra" style="border:0;background:transparent">
+    <div class="caixa" style="border:0;background:#fff;box-shadow:${v || 'none'};border-radius:10px;margin:8px"></div>
+    <div class="rotulo"><b>sombra.${t}</b><span>${v || 'a definir'}</span></div>
+  </div>`;
+}).join('');
+</script>
+</body>
+</html>

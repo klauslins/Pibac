@@ -11,6 +11,10 @@ atualizado: 2026-09-10
 
 > **Fonte da verdade da marca.** Se um logo, cor ou fonte está em desacordo com
 > outra pasta, esta aqui é a que vale.
+>
+> 📖 **Comece por [`design-system.md`](design-system.md)** — é o índice de tudo
+> que está aqui. Para ver o sistema aplicado, abra [`preview.html`](preview.html)
+> no navegador.
 
 > [!WARNING]
 > **Pasta imutável.** Nada aqui é alterado, movido ou renomeado sem aprovação

@@ -113,6 +113,13 @@ que horas, onde**.
 10. **NÃO** cite versículo sem conferir o texto e a referência na versão adotada
     pela igreja (#CONFIRMAR qual — ARA, NVI, ACF…). Versículo errado em peça
     impressa é erro que não se corrige depois.
+11. **NÃO** escreva um hex, um tamanho ou um espaçamento à mão em código ou em
+    peça. A fonte é `00_BRAND/tokens/tokens.json`; o CSS, o SCSS e o preset do
+    Tailwind saem dele por `gerar-tokens.py`. Valor colado na mão é o valor que
+    não se atualiza quando a marca muda.
+12. **NÃO** redesenhe, redigite, vetorize automaticamente nem gere a marca por
+    IA. Se o vetor original não existe, ele é procurado — não refeito. Ver
+    `00_BRAND/logo/logo.md`.
 
 ---
 
@@ -189,6 +196,7 @@ Antes de considerar uma peça pronta:
 ## 6. Comandos da automação
 
 ```bash
+python3 _META/automacao/gerar-tokens.py         # cor e tipo -> CSS, SCSS, Tailwind
 python3 _META/automacao/generate-manifest.py    # indexa assets
 python3 _META/automacao/validar-projeto.py      # valida o padrão
 python3 _META/automacao/rename-assets.py --dry-run <pasta>
@@ -233,6 +241,8 @@ bash _META/automacao/publish-pipeline.sh [campanha]
 |---|---|
 | Quem é a igreja, qual o contexto? | `01_STRATEGY/briefing-cliente.md` |
 | Qual a visão, a missão e os pilares? | §1 deste arquivo · `01_STRATEGY/manifesto/` |
+| Que cor, fonte ou logo usar numa peça? | `00_BRAND/design-system.md` |
+| O valor exato de uma cor ou medida | `00_BRAND/tokens/tokens.json` — **a única fonte** |
 | Como escrever para esta igreja? | `01_STRATEGY/guia-de-conteudo/` |
 | Quais assets existem e qual o status? | `_META/automacao/manifest.json` |
 | Quais formatos e specs por canal? | `_META/automacao/pipeline-config.json` |

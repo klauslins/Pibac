@@ -1,6 +1,6 @@
 ---
 tipo: indice
-cliente: pibac
+cliente: Pibac
 titulo: Índice do projeto Pibac
 usar_quando: precisar descobrir qual documento responde uma pergunta
 status: ativo
@@ -20,7 +20,7 @@ aquele arquivo, para você não precisar abrir todos para descobrir.
 Se você é um agente: leia [`AGENTS.md`](../AGENTS.md) primeiro — ele tem as
 regras e o contexto da marca. Este índice é o passo seguinte.
 
-**19 documentos.**
+**24 documentos.**
 
 ---
 
@@ -31,6 +31,18 @@ regras e o contexto da marca. Este índice é o passo seguinte.
 | [Briefing](../01_STRATEGY/briefing-cliente.md) | precisar do contexto geral da igreja |
 | [AGENTS.md](../AGENTS.md) | sempre, antes de qualquer tarefa neste projeto |
 | [Primeira Igreja Batista em Águas Claras](../README.md) | quiser a visao geral do projeto, sendo gente |
+
+---
+
+## Regras visuais
+
+| Documento | Use quando |
+|---|---|
+| [Paleta](../00_BRAND/cores/paleta.md) | precisar decidir ou conferir qual cor usar numa peca |
+| [Design System](../00_BRAND/design-system.md) | for desenhar qualquer peca da igreja — comece por aqui |
+| [Grafismos](../00_BRAND/grafismos/grafismos.md) | for montar a arte de um post, story ou slide e precisar da anatomia da peca |
+| [Logo](../00_BRAND/logo/logo.md) | for aplicar, redimensionar ou exportar a marca da igreja |
+| [Tipografia](../00_BRAND/tipografia/tipografia.md) | for escolher fonte, tamanho ou hierarquia de texto numa peca |
 
 ---
 

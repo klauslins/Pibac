@@ -139,6 +139,38 @@ logo-h-oficial-v1.svg
 
 ---
 
+## 🎨 Design System
+
+A identidade visual mora em [`00_BRAND/`](00_BRAND/) e o índice é
+[`00_BRAND/design-system.md`](00_BRAND/design-system.md). **Leia antes de abrir
+qualquer arquivo de arte.**
+
+| Arquivo | Para quê |
+|---|---|
+| [`00_BRAND/design-system.md`](00_BRAND/design-system.md) | **Comece por aqui.** Índice e fundamentos |
+| [`00_BRAND/preview.html`](00_BRAND/preview.html) | O sistema aplicado — abra no navegador |
+| [`00_BRAND/cores/paleta.md`](00_BRAND/cores/paleta.md) | Cores, papéis e contraste conferido |
+| [`00_BRAND/tipografia/tipografia.md`](00_BRAND/tipografia/tipografia.md) | Famílias, escala e o caso do versículo |
+| [`00_BRAND/logo/logo.md`](00_BRAND/logo/logo.md) | Versões, respiro, tamanho mínimo, proibições |
+| [`00_BRAND/grafismos/grafismos.md`](00_BRAND/grafismos/grafismos.md) | Anatomia do post e formatos |
+| [`00_BRAND/tokens/`](00_BRAND/tokens/) | JSON, CSS, SCSS e preset Tailwind |
+
+```bash
+# regenera CSS, SCSS e Tailwind a partir de 00_BRAND/tokens/tokens.json
+python3 _META/automacao/gerar-tokens.py
+```
+
+> [!IMPORTANT]
+> **Nunca escreva um hex à mão.** A fonte da verdade é o `tokens.json`. Precisa
+> de um valor novo? Adicione lá e regenere — a mudança chega em todos os canais
+> de uma vez.
+>
+> Enquanto houver `null` no `tokens.json`, o script **se recusa a gerar** e
+> lista o que falta. É de propósito: melhor não ter o arquivo do que ter o
+> arquivo com valor chutado.
+
+---
+
 ## 🤖 Trabalhando com IA
 
 Instruções para agentes em [`AGENTS.md`](AGENTS.md) — lido automaticamente por
@@ -165,7 +197,8 @@ Claude Code, Cursor e similares.
 |---|---|
 | Repositório criado | ✅ 17/09/2026 |
 | Briefing | 🟡 parcial — levantado do site, falta onboarding |
-| Identidade visual | ⏳ `00_BRAND/` vazio, aguardando os vetores originais |
+| Design system | 🟡 esqueleto pronto — decisões de cor e tipografia pendentes |
+| Identidade visual | ⏳ `00_BRAND/logo/` vazio, aguardando os vetores originais |
 | Estratégia de conteúdo | ⏳ |
 | Produção | ⏳ |
 | Publicação | ⏳ |

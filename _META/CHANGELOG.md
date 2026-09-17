@@ -16,6 +16,23 @@ Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.0.0/).
 
 ## [Não publicado]
 
+### Adicionado — 17/09/2026
+- **Esqueleto do design system em `00_BRAND/`**, para o Klaus preencher com as
+  decisões de design. Nenhuma cor, fonte ou medida de marca foi decidida aqui
+- `design-system.md`, `cores/paleta.md`, `tipografia/tipografia.md`,
+  `logo/logo.md` e `grafismos/grafismos.md` — as seções e as perguntas, em branco
+- `tokens/tokens.json` — fonte da verdade no formato W3C Design Tokens. Cor,
+  família tipográfica e sombra estão em `null`; escalas de tamanho, espaço,
+  entrelinha e raio já vêm preenchidas por serem encanamento, não identidade
+- `_META/automacao/gerar-tokens.py` — gera `tokens.css`, `tokens.scss` e
+  `tailwind.preset.js` a partir do JSON. **Recusa gerar enquanto houver `null`**
+  e lista o que falta, em vez de produzir arquivo com valor chutado. Os grupos de
+  cor do preset Tailwind saem do próprio JSON, sem lista fixa no script
+- `preview.html` — lê as variáveis do `tokens.css` e mostra o sistema aplicado;
+  enquanto não houver tokens, explica o que fazer
+- `AGENTS.md`: duas regras absolutas novas — §2.11 nenhum hex à mão, §2.12 a
+  marca não é redesenhada nem gerada por IA
+
 ### Planejado
 - Reunião de onboarding — fechar os `#CONFIRMAR` do briefing
 - Identidade visual original (`.ai`/`.svg`) em `00_BRAND/`
