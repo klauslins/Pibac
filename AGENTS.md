@@ -246,6 +246,7 @@ bash _META/automacao/publish-pipeline.sh [campanha]
 | O valor exato de uma cor ou medida | `00_BRAND/tokens/tokens.json` — **a única fonte** |
 | Como escrever para esta igreja? | `01_STRATEGY/guia-de-conteudo/` |
 | Como cobrir um culto em Stories? | `01_STRATEGY/guia-de-conteudo/manual-stories-culto.md` |
+| Como escrever qualquer conteúdo da igreja | `.claude/skills/comunicacao-pibac/SKILL.md` |
 | O roteiro para usar durante o culto | `03_CONTENT/roteiros/_modelo-cobertura-culto.md` |
 | Quais assets existem e qual o status? | `_META/automacao/manifest.json` |
 | Quais formatos e specs por canal? | `_META/automacao/pipeline-config.json` |

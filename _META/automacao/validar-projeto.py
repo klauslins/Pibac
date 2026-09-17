@@ -81,6 +81,8 @@ NOMES_CANONICOS = {
     "README.md", "AGENTS.md", "CHANGELOG.md", "CONTRIBUTING.md",
     "LICENSE", "LICENSE.md", "CLAUDE.md", "NOMENCLATURA.md",
     "PIPELINE.md", "VERSIONAMENTO.md", "GUIA-RAPIDO.md", "MEMORY.md",
+    # O Claude Code so reconhece uma skill se o arquivo se chamar SKILL.md.
+    "SKILL.md", "INDICE.md",
 }
 
 

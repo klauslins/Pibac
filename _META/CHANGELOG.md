@@ -17,6 +17,19 @@ Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.0.0/).
 ## [Não publicado]
 
 ### Adicionado — 17/09/2026
+- **Skill `comunicacao-pibac`** em `.claude/skills/` — o agente oficial de
+  comunicação da igreja, a partir do prompt mestre de 30 seções. Carrega sozinha
+  no Claude Code quando o pedido é de conteúdo
+- Estruturada em camadas: o `SKILL.md` traz identidade, tom, fidelidade bíblica,
+  como responder a quem produz em tempo real e o roteador; o detalhe de cada
+  frente fica em `references/` (canais, sermões, ministérios, produção visual) e
+  só entra em contexto quando a tarefa pede
+- O que o prompt mestre não trazia e foi ligado às regras do repositório:
+  autorização de imagem de menores, dado pessoal de membro, a marca que não se
+  gera por IA e a pendência do nome oficial ("em" ou "de" Águas Claras)
+- A direção de cobertura de **culto** aponta para o manual e o roteiro que já
+  existem, em vez de duplicar; os cinco blocos de direção visual ficam para
+  **eventos**
 - **Manual de Stories para cobertura de culto**, a partir do
   `Guia de Stories — Missão e Mídia` (15 páginas, PDF). Os três "modelos" do
   original eram a mesma sequência com redação diferente — viraram **uma**

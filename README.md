@@ -189,8 +189,16 @@ python3 _META/automacao/gerar-tokens.py
 
 ## 🤖 Trabalhando com IA
 
-Instruções para agentes em [`AGENTS.md`](AGENTS.md) — lido automaticamente por
-Claude Code, Cursor e similares.
+Duas camadas, com funções diferentes:
+
+| | Para quê |
+|---|---|
+| [`AGENTS.md`](AGENTS.md) | **As regras.** Contexto da igreja e o que nenhum agente pode violar. Lido automaticamente por Claude Code, Cursor e similares |
+| [`.claude/skills/comunicacao-pibac/`](.claude/skills/comunicacao-pibac/) | **O agente de comunicação.** Tom de voz, fidelidade bíblica e o padrão de cada canal. Carrega sozinho quando o pedido é de conteúdo |
+
+No Claude Code, dentro deste repositório, a skill dispara sozinha — ou chame na
+mão com `/comunicacao-pibac`. Em outra ferramenta, cole o `SKILL.md` como
+instrução do sistema. Detalhes em [`_META/skills/README.md`](_META/skills/README.md).
 
 ---
 

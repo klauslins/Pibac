@@ -20,7 +20,7 @@ aquele arquivo, para você não precisar abrir todos para descobrir.
 Se você é um agente: leia [`AGENTS.md`](../AGENTS.md) primeiro — ele tem as
 regras e o contexto da marca. Este índice é o passo seguinte.
 
-**26 documentos.**
+**27 documentos.**
 
 ---
 
@@ -68,6 +68,14 @@ regras e o contexto da marca. Este índice é o passo seguinte.
 | Documento | Use quando |
 |---|---|
 | [Checklist de Entrega](checklist-entrega.md) | conferir uma peca antes de entregar |
+
+---
+
+## Automação e agentes
+
+| Documento | Use quando |
+|---|---|
+| [Skills do projeto](skills/README.md) | quiser saber quais agentes de IA existem neste repositorio e onde eles moram |
 
 ---
 
