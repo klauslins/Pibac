@@ -208,8 +208,26 @@ story-louvor-igreja-cantando-v2.mp4
 
 ---
 
+## De onde isto veio
+
+Este manual reorganiza o **`Guia de Stories — Missão e Mídia`**, produzido pela
+equipe da igreja: 15 páginas, arquivadas em
+[`../_fontes/guia-stories-missao-e-midia-v1.pdf`](../_fontes/guia-stories-missao-e-midia-v1.pdf).
+
+O original trazia três "modelos" de cobertura que eram a mesma sequência com
+redação diferente. Aqui eles viraram **uma** sequência, com as variações
+preservadas onde são úteis — as falas de abertura e as de encerramento. Nenhuma
+orientação do original foi descartada.
+
+**O que foi acrescentado** e não existia lá: a autorização de imagem no bloco
+Kids, com a alternativa de registrar sem identificar ninguém, e o caminho do
+arquivo depois do culto até `_PUBLISH-READY/`.
+
+---
+
 ## Documentos relacionados
 
 - [Roteiro de cobertura](../../03_CONTENT/roteiros/_modelo-cobertura-culto.md) — a versão de uso, durante o culto
+- [`_fontes/guia-stories-missao-e-midia-v1.pdf`](../_fontes/guia-stories-missao-e-midia-v1.pdf) — o guia original da equipe
 - [`AGENTS.md`](../../AGENTS.md) — regras absolutas e tensão de marca
 - [`00_BRAND/design-system.md`](../../00_BRAND/design-system.md) — cor, tipografia e grafismo
