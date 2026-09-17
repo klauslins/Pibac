@@ -50,6 +50,10 @@ A data de cada pasta é a de **captura**, lida do EXIF `DateTimeOriginal`.
 > assinada pelos responsáveis, arquivada em
 > [`../01_STRATEGY/_fontes/autorizacoes-de-imagem/`](../01_STRATEGY/_fontes/autorizacoes-de-imagem/).
 > É a regra §2.8 do [`AGENTS.md`](../AGENTS.md).
+>
+> **Na sessão de 15/08 isso é simples:** as crianças são filhas do próprio
+> irmão Moisés, então a autorização vem dele e da esposa. Colher a assinatura
+> agora, enquanto o envio está sendo preparado — e não na véspera de publicar.
 
 ---
 
@@ -58,7 +62,7 @@ A data de cada pasta é a de **captura**, lida do EXIF `DateTimeOriginal`.
 | Quem | Quem é |
 |---|---|
 | **Pr. Moisés Gonçalves** | Pastor presidente da PIBAC desde 31/10/2020 |
-| **Irmão Moisés** | Membro que vai ao Canadá em missão com a família — é ele nas fotos de 15/08 |
+| **Irmão Moisés** | Membro que vai ao Canadá em missão com a esposa e os filhos — é ele nas fotos de 15/08 |
 
 São pessoas diferentes. Atribuir a foto de uma ao nome da outra numa legenda é o
 tipo de erro que só se descobre depois de publicado.
