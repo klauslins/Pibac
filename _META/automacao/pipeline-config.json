@@ -1,0 +1,238 @@
+{
+  "$schema": "https://akza.tech/schemas/pipeline-config/v1",
+  "version": "1.0.0",
+  "project_id": "PIB-Aguas-Claras",
+  "updated_at": "2026-09-17",
+  "directories": {
+    "brand": "00_BRAND",
+    "strategy": "01_STRATEGY",
+    "planning": "02_PLANNING",
+    "content": "03_CONTENT",
+    "production": "04_PRODUCTION",
+    "exports": "05_EXPORTS",
+    "publish_ready": "05_EXPORTS/_PUBLISH-READY",
+    "media": "06_MEDIA",
+    "impressos": "07_IMPRESSOS",
+    "meta": "_META",
+    "scripts": "_META/automacao"
+  },
+  "naming_convention": {
+    "pattern": "[type]-[slug]-[variant]-v[N].[ext]",
+    "rules": [
+      "Apenas minúsculas",
+      "Sem acentos ou caracteres especiais",
+      "Separador: hífen (-)",
+      "Nunca usar 'final', 'final2', 'FINAL_REAL' — use versões numeradas"
+    ],
+    "valid_types": [
+      "post",
+      "story",
+      "reels",
+      "banner",
+      "logo",
+      "roteiro",
+      "copy",
+      "outdoor",
+      "card",
+      "thumbnail",
+      "carrossel"
+    ],
+    "valid_variants": [
+      "colorido",
+      "dark",
+      "branco",
+      "preto",
+      "horizontal",
+      "vertical",
+      "h",
+      "v"
+    ]
+  },
+  "asset_statuses": [
+    "draft",
+    "review",
+    "approved",
+    "published",
+    "archived"
+  ],
+  "export_specs": {
+    "instagram": {
+      "feed-1x1": {
+        "width": 1080,
+        "height": 1080,
+        "dpi": 72,
+        "format": [
+          "jpg",
+          "png"
+        ],
+        "colorspace": "rgb",
+        "max_kb": 8000
+      },
+      "story-9x16": {
+        "width": 1080,
+        "height": 1920,
+        "dpi": 72,
+        "format": [
+          "jpg",
+          "mp4"
+        ],
+        "colorspace": "rgb",
+        "max_kb": 30000
+      },
+      "reels-9x16": {
+        "width": 1080,
+        "height": 1920,
+        "dpi": 72,
+        "format": [
+          "mp4"
+        ],
+        "colorspace": "rgb",
+        "max_mb": 650
+      },
+      "carrossel-1x1": {
+        "width": 1080,
+        "height": 1080,
+        "dpi": 72,
+        "format": [
+          "jpg"
+        ],
+        "colorspace": "rgb",
+        "max_kb": 8000
+      }
+    },
+    "linkedin": {
+      "post-1200x628": {
+        "width": 1200,
+        "height": 628,
+        "dpi": 72,
+        "format": [
+          "jpg",
+          "png"
+        ],
+        "colorspace": "rgb",
+        "max_kb": 10000
+      },
+      "story-9x16": {
+        "width": 1080,
+        "height": 1920,
+        "dpi": 72,
+        "format": [
+          "jpg"
+        ],
+        "colorspace": "rgb",
+        "max_kb": 8000
+      }
+    },
+    "youtube": {
+      "thumbnail-1280x720": {
+        "width": 1280,
+        "height": 720,
+        "dpi": 72,
+        "format": [
+          "jpg"
+        ],
+        "colorspace": "rgb",
+        "max_kb": 2048
+      },
+      "shorts-9x16": {
+        "width": 1080,
+        "height": 1920,
+        "dpi": 72,
+        "format": [
+          "mp4"
+        ],
+        "colorspace": "rgb"
+      },
+      "video-16x9": {
+        "width": 1920,
+        "height": 1080,
+        "dpi": 72,
+        "format": [
+          "mp4"
+        ],
+        "colorspace": "rgb"
+      }
+    },
+    "tiktok": {
+      "video-9x16": {
+        "width": 1080,
+        "height": 1920,
+        "dpi": 72,
+        "format": [
+          "mp4"
+        ],
+        "colorspace": "rgb",
+        "max_mb": 287
+      }
+    },
+    "print": {
+      "cartao-visita": {
+        "width_mm": 90,
+        "height_mm": 50,
+        "dpi": 300,
+        "format": [
+          "pdf"
+        ],
+        "colorspace": "cmyk",
+        "bleed_mm": 3
+      },
+      "timbrado-a4": {
+        "width_mm": 210,
+        "height_mm": 297,
+        "dpi": 300,
+        "format": [
+          "pdf"
+        ],
+        "colorspace": "cmyk"
+      }
+    }
+  },
+  "approval_flow": {
+    "steps": [
+      {
+        "step": 1,
+        "name": "Criação",
+        "status_from": "draft",
+        "status_to": "review",
+        "responsible": "designer-akza"
+      },
+      {
+        "step": 2,
+        "name": "Revisão interna",
+        "status_from": "review",
+        "status_to": "approved",
+        "responsible": "diretor-akza"
+      },
+      {
+        "step": 3,
+        "name": "Aprovação cliente",
+        "status_from": "approved",
+        "status_to": "approved",
+        "responsible": "#CONFIRMAR",
+        "note": "Aprovação do cliente antes de mover para _PUBLISH-READY"
+      },
+      {
+        "step": 4,
+        "name": "Publicação",
+        "status_from": "approved",
+        "status_to": "published",
+        "responsible": "gestor-trafego-akza"
+      }
+    ]
+  },
+  "content_pillars": [
+    {
+      "id": "#CONFIRMAR",
+      "name": "Pilar 1",
+      "description": "Definir a partir de 01_STRATEGY/linhas-editoriais/"
+    }
+  ],
+  "tone_of_voice": {
+    "target": "#CONFIRMAR",
+    "keywords_positive": [],
+    "keywords_avoid": [],
+    "style": "#CONFIRMAR",
+    "reference": "#CONFIRMAR"
+  },
+  "padrao_akza": "1.0.0"
+}

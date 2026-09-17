@@ -1,0 +1,49 @@
+{
+  "$schema": "https://akza.tech/schemas/project-manifest/v1",
+  "padrao_akza": "1.0.0",
+  "project": {
+    "id": "Pibac",
+    "name": "Primeira Igreja Batista em Águas Claras",
+    "client_contact": "#CONFIRMAR",
+    "client_contact_marketing": "#CONFIRMAR",
+    "website": "pibaguasclaras.org.br",
+    "segment": "Igreja evangélica batista — Convenção Batista Brasileira (CBB), Águas Claras/DF",
+    "positioning": "#CONFIRMAR",
+    "locations": [
+      "Rua Jerivá, nº 5, Águas Claras/DF — CEP 71928-360"
+    ],
+    "created_at": "2026-09-17",
+    "updated_at": "2026-09-17",
+    "status": "active"
+  },
+  "brand": {
+    "primary_color": "#CONFIRMAR",
+    "secondary_color": "#CONFIRMAR",
+    "accent_color": "#CONFIRMAR",
+    "fonts": {
+      "primary": "#CONFIRMAR",
+      "secondary": "#CONFIRMAR",
+      "body": "#CONFIRMAR"
+    },
+    "logo_files": {
+      "horizontal_svg": "00_BRAND/logo/horizontal/svg/logo-h-oficial-v1.svg",
+      "vertical_svg": "00_BRAND/logo/vertical/svg/logo-v-oficial-v1.svg",
+      "simbolo_svg": "00_BRAND/logo/simbolo/svg/simbolo-oficial-v1.svg"
+    },
+    "brand_guidelines": "00_BRAND/brand-guidelines-v1.pdf"
+  },
+  "platforms": {},
+  "campaigns": [],
+  "assets": [],
+  "pipeline": {
+    "publish_ready_dir": "05_EXPORTS/_PUBLISH-READY",
+    "config_file": "_META/automacao/pipeline-config.json",
+    "scripts": {
+      "generate_manifest": "_META/automacao/generate-manifest.py",
+      "validate": "_META/automacao/validar-projeto.py",
+      "rename_assets": "_META/automacao/rename-assets.py",
+      "export_social": "_META/automacao/export-social.sh",
+      "publish": "_META/automacao/publish-pipeline.sh"
+    }
+  }
+}

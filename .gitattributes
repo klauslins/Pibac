@@ -1,0 +1,71 @@
+# ═══════════════════════════════════════════════════════════════════
+#  .gitattributes — Projeto de Comunicação Akza
+#  Define quais arquivos vão para o Git LFS (Large File Storage).
+#
+#  POR QUE LFS: arquivos de design são binários. Sem LFS, cada versão
+#  nova de um .ai guarda o arquivo INTEIRO de novo no histórico, e o
+#  repositório incha para sempre. Com LFS, o Git guarda um ponteiro
+#  de 130 bytes e o arquivo real vai para um armazenamento à parte.
+#
+#  IMPORTANTE: quem clonar precisa ter o git-lfs instalado
+#  (brew install git-lfs && git lfs install), senão recebe os
+#  ponteiros de texto no lugar dos arquivos.
+# ═══════════════════════════════════════════════════════════════════
+
+# ── Normalização de texto ──────────────────────────────────────────
+* text=auto eol=lf
+
+# ── Fontes de design (LFS) ─────────────────────────────────────────
+*.ai    filter=lfs diff=lfs merge=lfs -text
+*.eps   filter=lfs diff=lfs merge=lfs -text
+*.psd   filter=lfs diff=lfs merge=lfs -text
+*.psb   filter=lfs diff=lfs merge=lfs -text
+*.indd  filter=lfs diff=lfs merge=lfs -text
+*.idml  filter=lfs diff=lfs merge=lfs -text
+*.fig   filter=lfs diff=lfs merge=lfs -text
+*.sketch filter=lfs diff=lfs merge=lfs -text
+*.afdesign filter=lfs diff=lfs merge=lfs -text
+*.afphoto  filter=lfs diff=lfs merge=lfs -text
+
+# ── Imagens de alta resolução (LFS) ────────────────────────────────
+*.tif   filter=lfs diff=lfs merge=lfs -text
+*.tiff  filter=lfs diff=lfs merge=lfs -text
+*.pdf   filter=lfs diff=lfs merge=lfs -text
+
+# ── Vídeo e áudio (LFS) ────────────────────────────────────────────
+*.mp4   filter=lfs diff=lfs merge=lfs -text
+*.mov   filter=lfs diff=lfs merge=lfs -text
+*.webm  filter=lfs diff=lfs merge=lfs -text
+*.wav   filter=lfs diff=lfs merge=lfs -text
+*.mp3   filter=lfs diff=lfs merge=lfs -text
+*.aif   filter=lfs diff=lfs merge=lfs -text
+*.aep   filter=lfs diff=lfs merge=lfs -text
+*.prproj filter=lfs diff=lfs merge=lfs -text
+
+# ── Arquivos compactados (LFS) ─────────────────────────────────────
+*.zip   filter=lfs diff=lfs merge=lfs -text
+*.rar   filter=lfs diff=lfs merge=lfs -text
+
+# ── Binários leves: Git normal (não vale o custo do LFS) ───────────
+# png, jpg, svg, ttf, otf, docx ficam no Git comum — são pequenos
+# e/ou raramente mudam.
+*.png   binary
+*.jpg   binary
+*.jpeg  binary
+*.webp  binary
+*.gif   binary
+*.ttf   binary
+*.otf   binary
+*.woff  binary
+*.woff2 binary
+*.docx  binary
+*.xlsx  binary
+*.pptx  binary
+*.webloc binary
+
+# ── SVG é texto: permite ver o diff de verdade ─────────────────────
+*.svg   text
+
+# ── Linguagem detectada pelo GitHub (evita "este repo é 90% Shell") ─
+*.svg linguist-vendored
+00_BRAND/tipografia/** linguist-vendored

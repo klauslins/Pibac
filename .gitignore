@@ -1,0 +1,61 @@
+# ═══════════════════════════════════════════════════════════════════
+#  .gitignore — Projeto de Comunicação Akza
+#  O que o Git NÃO versiona. Tudo aqui continua existindo no SSD,
+#  apenas não sobe para o GitHub.
+# ═══════════════════════════════════════════════════════════════════
+
+# ── macOS em disco exFAT ───────────────────────────────────────────
+# O macOS recria esses arquivos sozinho a cada pasta criada.
+._*
+.DS_Store
+.AppleDouble
+.Spotlight-V100
+.Trashes
+.fseventsd
+.TemporaryItems
+
+# ── Masters pesados (>100 MB) ──────────────────────────────────────
+# O GitHub bloqueia arquivos acima de 100 MB. Estes ficam apenas no
+# SSD e no backup em nuvem, indexados no _META/automacao/manifest.json
+# com checksum, dimensões e localização.
+08_MASTERS/
+
+# ── Mídia bruta de captação ────────────────────────────────────────
+# Material de câmera: dezenas de GB, nunca editado diretamente.
+# O que entra no Git é o resultado tratado/editado.
+06_MEDIA/videos/brutos/
+06_MEDIA/fotos/originais/
+06_MEDIA/audio/**/*.wav
+06_MEDIA/audio/**/*.aif
+
+# ── Temporários de software de design ──────────────────────────────
+*.tmp
+*.temp
+*~
+*.swp
+*.aidb
+*.indb
+*.idlk
+Adobe*/
+*Recovery*/
+.cache/
+
+# ── Obsidian ───────────────────────────────────────────────────────
+# Config do app, por maquina e por pessoa. O acervo e um vault, mas a
+# preferencia de tema e o layout de painel de cada um nao sao do projeto.
+.obsidian/
+
+# ── Automação ──────────────────────────────────────────────────────
+node_modules/
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env
+.env.local
+
+# ── Exceções: mantém a estrutura de pastas vazias visível ──────────
+!**/.gitkeep
+
+# Pacote de skill: artefato derivado do SKILL.md
+_META/skills/*.skill

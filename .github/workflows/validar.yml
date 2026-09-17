@@ -1,0 +1,49 @@
+name: Validar padrão Akza
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  validar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          lfs: false            # ponteiros bastam: a validação olha nomes e estrutura
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Estrutura e nomenclatura
+        run: python3 _META/automacao/validar-projeto.py
+
+      - name: Nenhum arquivo acima de 100 MB fora de 08_MASTERS
+        run: |
+          grandes=$(find . -type f -size +100M -not -path './.git/*' -not -path './08_MASTERS/*' || true)
+          if [ -n "$grandes" ]; then
+            echo "::error::Arquivos acima de 100 MB fora de 08_MASTERS:"
+            echo "$grandes"
+            exit 1
+          fi
+
+      - name: Nenhum sidecar do macOS commitado
+        run: |
+          lixo=$(git ls-files | grep -E '(^|/)\._|\.DS_Store$' || true)
+          if [ -n "$lixo" ]; then
+            echo "::error::Sidecars do macOS no repositório:"
+            echo "$lixo"
+            exit 1
+          fi
+
+      - name: Nomes sem acento, espaço ou maiúscula
+        run: |
+          ruins=$(git ls-files | grep -vE '^(README|AGENTS|LICENSE|CHANGELOG|VERSAO)' \
+            | grep -E '[A-ZÀ-ÿ ]' | grep -vE '^(_META|00_BRAND|01_STRATEGY|02_PLANNING|03_CONTENT|04_PRODUCTION|05_EXPORTS|06_MEDIA|07_IMPRESSOS|08_MASTERS|\.github)/' || true)
+          if [ -n "$ruins" ]; then
+            echo "::warning::Nomes fora do padrão (minúsculas, sem acento, sem espaço):"
+            echo "$ruins"
+          fi
