@@ -20,7 +20,7 @@ aquele arquivo, para você não precisar abrir todos para descobrir.
 Se você é um agente: leia [`AGENTS.md`](../AGENTS.md) primeiro — ele tem as
 regras e o contexto da marca. Este índice é o passo seguinte.
 
-**27 documentos.**
+**28 documentos.**
 
 ---
 
@@ -83,6 +83,7 @@ regras e o contexto da marca. Este índice é o passo seguinte.
 
 | Documento | Use quando |
 |---|---|
+| [Acervo de fotos](../06_MEDIA/acervo.md) | precisar achar as fotos de um culto ou evento, ou saber o que existe de registro |
 | [CHANGELOG](CHANGELOG.md) | saber o que ja foi feito e quando |
 | [Guia Rápido](GUIA-RAPIDO.md) | for a primeira vez neste projeto, ou precisar do resumo de como tudo funciona |
 | [Nomenclatura](NOMENCLATURA.md) | nomear ou renomear qualquer arquivo |
