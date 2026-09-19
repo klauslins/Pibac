@@ -147,6 +147,32 @@ vira acervo.
 
 ---
 
+## Energia e cartões — o que temos hoje
+
+| | Bateria | Cartão |
+|---|---|---|
+| **Sony A7 IV** | **1 só, sem reserva** | 64 GB — suficiente, é câmera de foto |
+| **Osmo Pocket 3** | Interna + **punho-bateria** do combo | SanDisk Ultra 128 GB — ver o aviso acima |
+
+> [!WARNING]
+> **A A7 IV tem uma bateria e nenhuma reserva.** Para fotografar um culto de duas
+> horas, ela dá conta com folga. Para um **evento de meio período**, fica
+> apertado — e se acabar, a cobertura fotográfica simplesmente para.
+>
+> **A saída que não custa nada:** a A7 IV aceita **energia pela USB-C enquanto
+> grava**. Leve um power bank e um cabo USB-C na bolsa. Qualquer power bank de
+> celular resolve, e vocês já têm um.
+>
+> **Vídeo drena muito mais rápido que foto.** Se alguém for gravar vídeo na A7,
+> o power bank deixa de ser precaução e vira necessidade. A Pocket 3, com o
+> punho-bateria, é quem deve carregar o vídeo.
+
+O cartão de 64 GB da A7 IV está tranquilo **para foto**: no recorte APS-C as
+imagens saem com ~15 MP, e cabem milhares. Se for gravar vídeo nela, aí o
+espaço some rápido — mais um motivo para o vídeo ser da Pocket.
+
+---
+
 ## Uso direcionado — qual câmera em cada momento
 
 Seguindo os seis blocos do
@@ -164,6 +190,30 @@ Seguindo os seis blocos do
 **A regra por trás disso:** a Pocket é para *estar junto*, a A7 é para *olhar de
 perto*. E o plano aberto do templo cheio é da Pocket com a grande-angular — não
 da A7. Quando estiver em dúvida, pergunte qual das duas coisas o momento pede.
+
+---
+
+## Conferência da bolsa
+
+Os dois equipamentos viajam juntos numa bolsa. **Confira na saída e na volta** —
+é sempre o microfone ou a tampa da lente que fica para trás.
+
+| Item | Saiu | Voltou |
+|---|---|---|
+| Sony A7 IV | ☐ | ☐ |
+| Lente Tamron 17-70 | ☐ | ☐ |
+| Tampa da lente *(as duas)* | ☐ | ☐ |
+| Bateria da A7 IV | ☐ | ☐ |
+| Cartão 64 GB | ☐ | ☐ |
+| Osmo Pocket 3 | ☐ | ☐ |
+| Punho-bateria | ☐ | ☐ |
+| Microfone sem fio | ☐ | ☐ |
+| Lente grande-angular da Pocket | ☐ | ☐ |
+| Cartão 128 GB | ☐ | ☐ |
+| Carregadores e cabos | ☐ | ☐ |
+| Power bank + cabo USB-C | ☐ | ☐ |
+
+Quem leva assina a saída e a volta com a responsável.
 
 ---
 
@@ -206,6 +256,6 @@ da A7. Quando estiver em dúvida, pergunte qual das duas coisas o momento pede.
 | O quê | Situação |
 |---|---|
 | Compra de uma SanDisk Extreme U3/V30 | a decidir — a Ultra atual não sustenta 4K |
-| Quantas baterias extras | #CONFIRMAR |
 | Onde o equipamento fica guardado | #CONFIRMAR |
+| Compra de uma bateria reserva para a A7 IV | a decidir |
 | Existe seguro ou termo de responsabilidade | #CONFIRMAR |
