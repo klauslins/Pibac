@@ -16,6 +16,15 @@ Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.0.0/).
 
 ## [Não publicado]
 
+### Adicionado — 18/09/2026
+- `06_MEDIA/equipamento.md` — versão simples do manual de equipamento do
+  ministério de mídia: os dois equipamentos, qual usar em cada bloco do culto,
+  rotina de retirada e devolução e um responsável único
+- Registrado que a **Tamron 17-70 f/2.8 é lente de APS-C**: na A7 IV, que é
+  full-frame, a câmera entra em modo recorte. A foto sai com ~15 MP em vez de
+  33 MP e a grande-angular se perde (17mm se comportam como ~25mm), o que torna
+  o plano aberto do templo cheio difícil com esse conjunto
+
 ### Organizado — 17/09/2026
 - **Acervo de fotos migrado para `06_MEDIA/fotos/originais/`** — 2.542 arquivos,
   19 GB, que estavam em `Pibac/` na raiz do SSD em pastas numeradas de 2 a 15

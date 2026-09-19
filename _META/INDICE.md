@@ -4,7 +4,7 @@ cliente: Pibac
 titulo: Índice do projeto Pibac
 usar_quando: precisar descobrir qual documento responde uma pergunta
 status: ativo
-atualizado: 2026-09-17
+atualizado: 2026-09-18
 ---
 
 # Índice — Pibac
@@ -20,7 +20,7 @@ aquele arquivo, para você não precisar abrir todos para descobrir.
 Se você é um agente: leia [`AGENTS.md`](../AGENTS.md) primeiro — ele tem as
 regras e o contexto da marca. Este índice é o passo seguinte.
 
-**28 documentos.**
+**29 documentos.**
 
 ---
 
@@ -84,6 +84,7 @@ regras e o contexto da marca. Este índice é o passo seguinte.
 | Documento | Use quando |
 |---|---|
 | [Acervo de fotos](../06_MEDIA/acervo.md) | precisar achar as fotos de um culto ou evento, ou saber o que existe de registro |
+| [Equipamento do ministério de mídia](../06_MEDIA/equipamento.md) | for pegar a camera para cobrir um culto, ou precisar saber quem responde pelo equipamento |
 | [CHANGELOG](CHANGELOG.md) | saber o que ja foi feito e quando |
 | [Guia Rápido](GUIA-RAPIDO.md) | for a primeira vez neste projeto, ou precisar do resumo de como tudo funciona |
 | [Nomenclatura](NOMENCLATURA.md) | nomear ou renomear qualquer arquivo |

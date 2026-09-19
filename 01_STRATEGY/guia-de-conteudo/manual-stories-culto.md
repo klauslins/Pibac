@@ -228,6 +228,7 @@ arquivo depois do culto até `_PUBLISH-READY/`.
 ## Documentos relacionados
 
 - [Roteiro de cobertura](../../03_CONTENT/roteiros/_modelo-cobertura-culto.md) — a versão de uso, durante o culto
+- [Equipamento](../../06_MEDIA/equipamento.md) — qual câmera em cada bloco, e quem responde por ela
 - [`_fontes/guia-stories-missao-e-midia-v1.pdf`](../_fontes/guia-stories-missao-e-midia-v1.pdf) — o guia original da equipe
 - [`AGENTS.md`](../../AGENTS.md) — regras absolutas e tensão de marca
 - [`00_BRAND/design-system.md`](../../00_BRAND/design-system.md) — cor, tipografia e grafismo
