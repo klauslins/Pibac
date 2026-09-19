@@ -37,20 +37,41 @@ aparece no domingo.
 
 ## O que temos
 
-### DJI Osmo Pocket (Creator Combo)
+### DJI Osmo Pocket 3 — Creator Combo
 
-Câmera de bolso com estabilizador de 3 eixos. O combo Creator traz o microfone
-sem fio, a lente grande-angular e o punho-bateria.
+Câmera de bolso com sensor de 1 polegada e estabilizador mecânico de 3 eixos.
 
 **É a câmera do movimento.** Cabe na mão, não intimida ninguém e grava
-**vertical de verdade** — é ela que resolve Story e Reels sem recorte.
+**vertical de verdade** — basta girar a tela, e ela já nasce no formato de Story
+e Reels, sem recorte depois.
 
 Boa para: pessoas chegando, mesa de café, corredor, bastidor, percurso,
-entrevista curta, fala de convite. Com o microfone do combo, depoimento e
-convite ficam com áudio limpo mesmo com a igreja cheia.
+entrevista curta, fala de convite.
 
-> Modelo exato: #CONFIRMAR (Pocket 3?). Vale anotar aqui para quem for comprar
-> acessório ou cartão depois.
+**O que vem no combo Creator, e para que serve cada peça:**
+
+| Peça | Para que serve aqui |
+|---|---|
+| **Microfone sem fio (DJI Mic 2)** | Depoimento e convite com áudio limpo, mesmo com a igreja cheia. É o que separa um vídeo que se entende de um que ninguém escuta |
+| **Lente grande-angular** | Abre o enquadramento. **É ela que dá o plano aberto do templo cheio** — o que a A7 IV com a Tamron não consegue |
+| **Punho-bateria** | Dobra a autonomia e dá pegada firme. Para cobrir culto inteiro, use |
+| **Bolsa** | Guardar tudo junto. Equipamento solto na mochila é equipamento riscado |
+
+**Três recursos que valem aprender:**
+
+- **Girar a tela** liga a câmera e alterna entre deitado e em pé. É o gesto
+  principal — quem aprende isso já grava certo
+- **Rastreamento de rosto (ActiveTrack)** mantém a pessoa centralizada sozinha.
+  Resolve quem precisa gravar a si mesmo, sem ninguém segurando
+- **Tela girada para frente** para quem fala olhando para a câmera se enquadrar
+
+> [!NOTE]
+> **Cartão:** a Pocket 3 usa **microSD** e exige **UHS-I Speed Grade 3 (V30)** —
+> cartão mais lento trava a gravação no meio. Aceita até 1 TB. A DJI recomenda
+> SanDisk Extreme Pro e Kingston Canvas Go! Plus.
+>
+> **Ela não tem memória interna útil.** Sem cartão, não grava. Vale ter um
+> segundo cartão na bolsa.
 
 ### Sony A7 IV + Tamron 17-70mm f/2.8
 
@@ -94,7 +115,8 @@ Seguindo os seis blocos do
 | **6 · Fechamento** | Pocket + microfone | Fala curta, no meio da igreja |
 
 **A regra por trás disso:** a Pocket é para *estar junto*, a A7 é para *olhar de
-perto*. Quando estiver em dúvida, pergunte qual das duas coisas o momento pede.
+perto*. E o plano aberto do templo cheio é da Pocket com a grande-angular — não
+da A7. Quando estiver em dúvida, pergunte qual das duas coisas o momento pede.
 
 ---
 
@@ -137,8 +159,7 @@ perto*. Quando estiver em dúvida, pergunte qual das duas coisas o momento pede.
 | O quê | Situação |
 |---|---|
 | Quem é o responsável | #CONFIRMAR |
-| Modelo exato da Osmo Pocket | #CONFIRMAR |
-| Quantos cartões e de quanto | #CONFIRMAR |
+| Quantos cartões, de quanto, e se são V30 | #CONFIRMAR |
 | Quantas baterias extras | #CONFIRMAR |
 | Onde o equipamento fica guardado | #CONFIRMAR |
 | Existe seguro ou termo de responsabilidade | #CONFIRMAR |
