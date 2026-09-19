@@ -79,8 +79,9 @@ entrevista curta, fala de convite.
 - **Tela girada para frente** para quem fala olhando para a câmera se enquadrar
 
 > [!CAUTION]
-> **O cartão de hoje é o ponto fraco do equipamento.** Um SanDisk de 32 GB, e
-> pelo que a equipe relata, sem velocidade alta.
+> **O cartão de hoje é o ponto fraco do equipamento: SanDisk Ultra de 128 GB.**
+> A capacidade está boa — 128 GB dão mais de duas horas de 4K, o culto inteiro.
+> **A velocidade é que não serve.**
 >
 > **Por que isso derruba a gravação.** A Pocket 3 grava a até **130 Mbps** —
 > precisa escrever cerca de **16 MB/s sem parar**. Um cartão U1/V10 sustenta
@@ -88,28 +89,29 @@ entrevista curta, fala de convite.
 > tomada**. Ninguém percebe no culto; descobre-se em casa, quando já não dá para
 > regravar.
 >
-> **E 32 GB dão só cerca de 33 minutos de 4K.** Um culto tem duas horas.
+> **A pegadinha da embalagem.** A Ultra anuncia "até 140 MB/s" — isso é
+> velocidade de **leitura**, de tirar o arquivo do cartão. O que a câmera precisa
+> é de **escrita contínua**, e nisso a Ultra garante só os 10 MB/s da classe U1.
+> É por isso que um cartão que parece rápido falha ao gravar.
 >
-> **Como saber se o cartão serve:** olhe a face dele. Precisa ter o **3 dentro
-> do U** (UHS Speed Grade 3) e de preferência **V30**. Se estiver escrito `1`
-> dentro do U, é esse o motivo das falhas.
+> **Não é a marca nem a capacidade: é a linha.**
 >
-> | Escrito no cartão | Serve para 4K? |
-> |---|---|
-> | SanDisk **Ultra** — U1, V10, A1 | ❌ Não |
-> | SanDisk **Extreme** / **Extreme Pro** — U3, V30 | ✅ Sim |
+> | Escrito no cartão | Escrita garantida | Serve para 4K? |
+> |---|---|---|
+> | SanDisk **Ultra** — U1, A1 | 10 MB/s | ❌ Não |
+> | SanDisk **Extreme** / **Extreme Pro** — U3, V30 | 30 MB/s | ✅ Sim |
 >
-> Não é a marca nem os 32 GB: é a linha. A própria DJI lista a **SanDisk Extreme
-> Pro 32 GB V30** entre as recomendadas.
+> Na face do cartão, procure o **3 dentro do U** e o **V30**. A própria DJI
+> lista a SanDisk Extreme Pro entre as recomendadas.
 
 **As duas saídas, enquanto não há cartão novo:**
 
-1. **Gravar em 1080p em vez de 4K.** A taxa de dados cai muito, o cartão lento
-   dá conta, e o mesmo cartão rende bem mais tempo. Para Story e Reels isso
+1. **Gravar em 1080p em vez de 4K.** A taxa de dados cai bem abaixo do que a
+   Ultra sustenta, e os 128 GB rendem muito mais tempo. Para Story e Reels isso
    **não faz falta** — o Instagram entrega nessa resolução de qualquer jeito.
-   É a solução de hoje, sem gastar nada.
-2. **Comprar um V30 de 128 GB** e deixar o de 32 GB como reserva para 1080p.
-   É barato perto do risco de perder a cobertura de um culto.
+   É a solução de hoje, sem gastar nada: é só mudar na câmera.
+2. **Comprar uma SanDisk Extreme (U3/V30)**, e manter a Ultra de 128 GB como
+   reserva para 1080p. Barato perto do risco de perder a cobertura de um culto.
 
 > **Quando o 4K vale a pena mesmo assim:** material que vai para o acervo ou que
 > será reenquadrado depois — gravar em 4K e cortar para vertical preserva
@@ -203,8 +205,7 @@ da A7. Quando estiver em dúvida, pergunte qual das duas coisas o momento pede.
 
 | O quê | Situação |
 |---|---|
-| Qual a linha exata do cartão atual (Ultra? Extreme?) | #CONFIRMAR — está escrito na face dele |
-| Compra de um cartão V30 de 128 GB | a decidir |
+| Compra de uma SanDisk Extreme U3/V30 | a decidir — a Ultra atual não sustenta 4K |
 | Quantas baterias extras | #CONFIRMAR |
 | Onde o equipamento fica guardado | #CONFIRMAR |
 | Existe seguro ou termo de responsabilidade | #CONFIRMAR |
