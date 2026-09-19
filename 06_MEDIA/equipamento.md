@@ -78,13 +78,45 @@ entrevista curta, fala de convite.
   Resolve quem precisa gravar a si mesmo, sem ninguém segurando
 - **Tela girada para frente** para quem fala olhando para a câmera se enquadrar
 
-> [!NOTE]
-> **Cartão:** a Pocket 3 usa **microSD** e exige **UHS-I Speed Grade 3 (V30)** —
-> cartão mais lento trava a gravação no meio. Aceita até 1 TB. A DJI recomenda
-> SanDisk Extreme Pro e Kingston Canvas Go! Plus.
+> [!CAUTION]
+> **O cartão de hoje é o ponto fraco do equipamento.** Um SanDisk de 32 GB, e
+> pelo que a equipe relata, sem velocidade alta.
 >
-> **Ela não tem memória interna útil.** Sem cartão, não grava. Vale ter um
-> segundo cartão na bolsa.
+> **Por que isso derruba a gravação.** A Pocket 3 grava a até **130 Mbps** —
+> precisa escrever cerca de **16 MB/s sem parar**. Um cartão U1/V10 sustenta
+> 10 MB/s: fica abaixo do necessário, e **a gravação para sozinha no meio da
+> tomada**. Ninguém percebe no culto; descobre-se em casa, quando já não dá para
+> regravar.
+>
+> **E 32 GB dão só cerca de 33 minutos de 4K.** Um culto tem duas horas.
+>
+> **Como saber se o cartão serve:** olhe a face dele. Precisa ter o **3 dentro
+> do U** (UHS Speed Grade 3) e de preferência **V30**. Se estiver escrito `1`
+> dentro do U, é esse o motivo das falhas.
+>
+> | Escrito no cartão | Serve para 4K? |
+> |---|---|
+> | SanDisk **Ultra** — U1, V10, A1 | ❌ Não |
+> | SanDisk **Extreme** / **Extreme Pro** — U3, V30 | ✅ Sim |
+>
+> Não é a marca nem os 32 GB: é a linha. A própria DJI lista a **SanDisk Extreme
+> Pro 32 GB V30** entre as recomendadas.
+
+**As duas saídas, enquanto não há cartão novo:**
+
+1. **Gravar em 1080p em vez de 4K.** A taxa de dados cai muito, o cartão lento
+   dá conta, e o mesmo cartão rende bem mais tempo. Para Story e Reels isso
+   **não faz falta** — o Instagram entrega nessa resolução de qualquer jeito.
+   É a solução de hoje, sem gastar nada.
+2. **Comprar um V30 de 128 GB** e deixar o de 32 GB como reserva para 1080p.
+   É barato perto do risco de perder a cobertura de um culto.
+
+> **Quando o 4K vale a pena mesmo assim:** material que vai para o acervo ou que
+> será reenquadrado depois — gravar em 4K e cortar para vertical preserva
+> qualidade. Nesse caso, cartão rápido não é opcional.
+
+**Outros dados do cartão:** microSD, até 1 TB, formatado em exFAT. A câmera
+**não tem memória interna** — sem cartão, não grava. Tenha um segundo na bolsa.
 
 ### Sony A7 IV + Tamron 17-70mm f/2.8
 
@@ -171,7 +203,8 @@ da A7. Quando estiver em dúvida, pergunte qual das duas coisas o momento pede.
 
 | O quê | Situação |
 |---|---|
-| Quantos cartões, de quanto, e se são V30 | #CONFIRMAR |
+| Qual a linha exata do cartão atual (Ultra? Extreme?) | #CONFIRMAR — está escrito na face dele |
+| Compra de um cartão V30 de 128 GB | a decidir |
 | Quantas baterias extras | #CONFIRMAR |
 | Onde o equipamento fica guardado | #CONFIRMAR |
 | Existe seguro ou termo de responsabilidade | #CONFIRMAR |
