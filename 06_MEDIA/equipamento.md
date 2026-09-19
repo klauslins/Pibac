@@ -18,9 +18,15 @@ atualizado: 2026-09-18
 
 | | |
 |---|---|
-| **Responsável** | #CONFIRMAR |
-| **Contato** | #CONFIRMAR |
+| **Responsável** | **Rafaela Techmeier** |
+| **Contato** | *não entra aqui* — ver abaixo |
 | **Onde fica guardado** | #CONFIRMAR |
+
+> [!IMPORTANT]
+> **O telefone da Rafaela não vai neste arquivo.** O repositório é público, e a
+> regra §2.9 do [`AGENTS.md`](../AGENTS.md) vale também para quem serve no
+> ministério: dado pessoal de membro não fica exposto. O contato dela circula
+> pelo grupo da equipe, não pelo Git.
 
 **A regra é uma só:** o equipamento sai e volta pelas mãos do responsável. Quem
 for usar, combina com ele antes — não pega direto do armário. Não é
@@ -29,9 +35,16 @@ aparece no domingo.
 
 ### Registro de retirada
 
+Um caderno ou uma planilha simples, **guardada com o equipamento — não neste
+repositório.** Ela vai acumular nome de voluntário e data, e isso não é coisa
+que se publica. O modelo:
+
 | Data | Quem levou | O quê | Para quê | Voltou |
 |---|---|---|---|---|
 | | | | | |
+
+Parece burocracia até o domingo em que a câmera não aparece e ninguém lembra
+quem foi o último a usar.
 
 ---
 
@@ -158,7 +171,6 @@ da A7. Quando estiver em dúvida, pergunte qual das duas coisas o momento pede.
 
 | O quê | Situação |
 |---|---|
-| Quem é o responsável | #CONFIRMAR |
 | Quantos cartões, de quanto, e se são V30 | #CONFIRMAR |
 | Quantas baterias extras | #CONFIRMAR |
 | Onde o equipamento fica guardado | #CONFIRMAR |
