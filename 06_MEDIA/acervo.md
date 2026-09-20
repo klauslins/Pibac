@@ -4,7 +4,7 @@ cliente: pibac
 titulo: Acervo de fotos
 usar_quando: precisar achar as fotos de um culto ou evento, ou saber o que existe de registro
 status: ativo
-atualizado: 2026-09-17
+atualizado: 2026-09-20
 ---
 
 # Acervo de fotos
@@ -39,6 +39,27 @@ A data de cada pasta é a de **captura**, lida do EXIF `DateTimeOriginal`.
 | `2026-08-30-culto-celebracao` | Culto de Celebração | 18h08–20h01 | 97 | 535M |
 | `2026-09-06-culto-celebracao` | Culto de Celebração | 18h34–20h20 | 127 | 754M |
 | `2026-09-13-culto-celebracao` | Culto de Celebração | 17h58–20h24 | 161 | 1.4G |
+
+---
+
+## Vídeo
+
+Bruto de vídeo fica em `06_MEDIA/videos/brutos/`, com a mesma nomenclatura das
+fotos — `aaaa-mm-dd-evento`, pela data de captura.
+
+| Pasta | O que é | Horário | Arquivos | Tamanho |
+|---|---|---|---|---|
+| `2026-09-13-culto-celebracao` | Culto de Celebração — Sony FX3 | 18h29–20h58 | 104 clipes | 30 GB |
+
+Cada clipe vem com seu **XML de metadados**, que precisa continuar ao lado do
+MP4 — é dele que o Premiere lê os dados da câmera. As miniaturas geradas pela
+câmera ficam em `_thumbs/` e o LUT S-Log3 → Rec.709 em `_lut/`, para referência
+de cor na edição. O `_INFO.txt` na pasta descreve a origem.
+
+> [!NOTE]
+> **O clipe 0207 tem XML e miniatura, mas não tem MP4.** Gravação abortada, ou o
+> arquivo ficou com data de outro dia no cartão. Não houve perda na cópia: os
+> 315 arquivos foram conferidos por MD5 na origem e no destino, sem divergência.
 
 ---
 

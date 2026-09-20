@@ -16,6 +16,17 @@ Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.0.0/).
 
 ## [Não publicado]
 
+### Organizado — 20/09/2026
+- **Vídeo do culto de 13/09 ingerido do cartão da FX3** para
+  `06_MEDIA/videos/brutos/2026-09-13-culto-celebracao/`: 104 clipes, 30 GB,
+  gravados entre 18h29 e 20h58 — o culto inteiro, sem material de outro dia
+- Vieram junto os 105 XML de metadados (ao lado dos MP4, como o Premiere
+  espera), as miniaturas da câmera em `_thumbs/` e o LUT S-Log3 → Rec.709 em
+  `_lut/`
+- **315 arquivos conferidos por MD5 na origem e no destino, zero divergências.**
+  O cartão só é liberado depois dessa conferência
+- `acervo.md` ganha a seção de vídeo; o `_INFO.txt` na pasta descreve a origem
+
 ### Adicionado — 18/09/2026
 - `06_MEDIA/equipamento.md` — versão simples do manual de equipamento do
   ministério de mídia: os dois equipamentos, qual usar em cada bloco do culto,
