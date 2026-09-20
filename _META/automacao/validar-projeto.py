@@ -30,6 +30,25 @@ MANIFEST = PROJECT_ROOT / "_META" / "automacao" / "manifest.json"
 # ─── Regras ──────────────────────────────────────────────────────────────────
 
 LIMITE_GITHUB_MB = 100
+
+
+def fora_do_git(caminhos):
+    """Quais destes caminhos o .gitignore ja exclui.
+
+    O limite de 100 MB e uma regra do GitHub: so faz sentido para arquivo que
+    vai ser versionado. Perguntar ao proprio git evita manter aqui uma lista
+    paralela ao .gitignore, que divergiria na primeira alteracao.
+    """
+    import subprocess
+    if not caminhos:
+        return set()
+    try:
+        p = subprocess.run(
+            ["git", "-C", str(PROJECT_ROOT), "check-ignore", "--stdin"],
+            input="\n".join(caminhos), capture_output=True, text=True, timeout=60)
+    except Exception:
+        return set()          # sem git: mantem o comportamento antigo
+    return {l.strip() for l in p.stdout.splitlines() if l.strip()}
 PASTA_MASTERS = "08_MASTERS"
 
 PASTAS_OBRIGATORIAS = [
@@ -158,9 +177,10 @@ def validar(strict: bool) -> Relatorio:
 
     # 3. Varredura de arquivos
     sem_versao = []
-    for f in PROJECT_ROOT.rglob("*"):
-        if not f.is_file():
-            continue
+    arquivos = [f for f in PROJECT_ROOT.rglob("*") if f.is_file()]
+    IGNORADOS = fora_do_git([str(f.relative_to(PROJECT_ROOT)) for f in arquivos])
+
+    for f in arquivos:
         rel = str(f.relative_to(PROJECT_ROOT))
 
         if rel.startswith(".git/"):
@@ -175,7 +195,7 @@ def validar(strict: bool) -> Relatorio:
 
         # Tamanho
         mb = f.stat().st_size / 1_048_576
-        if mb > LIMITE_GITHUB_MB and not rel.startswith(PASTA_MASTERS):
+        if mb > LIMITE_GITHUB_MB and not rel.startswith(PASTA_MASTERS) and rel not in IGNORADOS:
             r.erro("tamanho", rel,
                    f"{mb:.0f} MB — acima do limite de {LIMITE_GITHUB_MB} MB do GitHub. "
                    f"Mova para {PASTA_MASTERS}/")
