@@ -44,7 +44,10 @@ def fora_do_git(caminhos):
         return set()
     try:
         p = subprocess.run(
-            ["git", "-C", str(PROJECT_ROOT), "check-ignore", "--stdin"],
+            # core.quotePath=false: sem isso o git devolve "Irm\303\243o" no lugar
+            # de "Irmão" e o caminho nunca casa com o que foi perguntado.
+            ["git", "-C", str(PROJECT_ROOT), "-c", "core.quotePath=false",
+             "check-ignore", "--stdin"],
             input="\n".join(caminhos), capture_output=True, text=True, timeout=60)
     except Exception:
         return set()          # sem git: mantem o comportamento antigo

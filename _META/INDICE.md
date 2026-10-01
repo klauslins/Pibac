@@ -4,7 +4,7 @@ cliente: Pibac
 titulo: Índice do projeto Pibac
 usar_quando: precisar descobrir qual documento responde uma pergunta
 status: ativo
-atualizado: 2026-09-18
+atualizado: 2026-10-01
 ---
 
 # Índice — Pibac
@@ -20,7 +20,7 @@ aquele arquivo, para você não precisar abrir todos para descobrir.
 Se você é um agente: leia [`AGENTS.md`](../AGENTS.md) primeiro — ele tem as
 regras e o contexto da marca. Este índice é o passo seguinte.
 
-**29 documentos.**
+**31 documentos.**
 
 ---
 
@@ -30,7 +30,7 @@ regras e o contexto da marca. Este índice é o passo seguinte.
 |---|---|
 | [Briefing](../01_STRATEGY/briefing-cliente.md) | precisar do contexto geral da igreja |
 | [AGENTS.md](../AGENTS.md) | sempre, antes de qualquer tarefa neste projeto |
-| [Primeira Igreja Batista em Águas Claras](../README.md) | quiser a visao geral do projeto, sendo gente |
+| [Primeira Igreja Batista de Águas Claras](../README.md) | quiser a visao geral do projeto, sendo gente |
 
 ---
 
@@ -39,6 +39,7 @@ regras e o contexto da marca. Este índice é o passo seguinte.
 | Documento | Use quando |
 |---|---|
 | [Manual de Stories — cobertura de culto](../01_STRATEGY/guia-de-conteudo/manual-stories-culto.md) | for cobrir um culto, ou orientar quem vai cobrir pela primeira vez |
+| [Stories — Culto de Celebração 20/09/2026 (Missionário Evandro)](../03_CONTENT/copy/social/2026-09/copy-story-culto-celebracao-missoes-2026-09-20-v1.md) | montar a sequência de Stories da cobertura do culto de 20/09 |
 | [Roteiro de cobertura de culto (modelo)](../03_CONTENT/roteiros/_modelo-cobertura-culto.md) | for cobrir um culto — copie este arquivo e use durante o culto |
 
 ---
@@ -60,6 +61,14 @@ regras e o contexto da marca. Este índice é o passo seguinte.
 | Documento | Use quando |
 |---|---|
 | [Briefing](../02_PLANNING/briefings/_modelo-briefing.md) | receber ou registrar uma demanda nova |
+
+---
+
+## Campanhas em produção
+
+| Documento | Use quando |
+|---|---|
+| [19 anos — tema de 2026](../02_PLANNING/briefings/19-anos-2026.md) | for produzir qualquer peca do tema do ano ou do aniversario de 19 anos |
 
 ---
 

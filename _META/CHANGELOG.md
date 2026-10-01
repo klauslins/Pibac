@@ -7,7 +7,7 @@ status: ativo
 atualizado: 2026-09-17
 ---
 
-# CHANGELOG — Primeira Igreja Batista em Águas Claras
+# CHANGELOG — Primeira Igreja Batista de Águas Claras
 
 Histórico de mudanças estruturais e entregas do projeto.
 Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.0.0/).
@@ -15,6 +15,27 @@ Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.0.0/).
 ---
 
 ## [Não publicado]
+
+### Adicionado — 01/10/2026
+- **Tema do ano de 2026 definido e registrado:** *"Santificai-vos, porque amanhã
+  o Senhor fará maravilhas no meio de vós"* (Josué 3:5), no ano dos 19 anos.
+  Ideia central: a santificação hoje como caminho para as maravilhas de amanhã
+- `02_PLANNING/briefings/19-anos-2026.md` — a campanha inteira: tema, os três
+  desdobramentos, a aplicação visual e a tipografia (Montserrat Extra Bold,
+  Brusher, Montserrat Light). Cor fica para o design system, não aqui
+- `04_PRODUCTION/19-anos-2026/mockups/` — os dois conceitos de camiseta
+- `AGENTS.md`: o tema entra no §1 e o versículo ganha redação fixa para o ano
+  inteiro, como exceção escrita à regra §2.10
+
+### Corrigido — 01/10/2026
+- **Nome oficial é "Primeira Igreja Batista de Águas Claras"**, com "de". O
+  repositório usava "em", vindo do `<title>` do site; o logotipo oficial e as
+  camisetas do tema trazem "DE". Corrigido em 9 arquivos
+
+### Pendente
+- **A conta dos 19 anos não fecha com a fundação em 14/12/2002**, que daria 24.
+  Provável diferença entre congregação (2002) e organização como igreja
+  (~2007). Precisa de confirmação antes de qualquer peça de "nossa história"
 
 ### Organizado — 20/09/2026
 - **Vídeo do culto de 13/09 ingerido do cartão da FX3** para

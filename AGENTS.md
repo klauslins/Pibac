@@ -18,7 +18,7 @@ atualizado: 2026-09-17
 
 | Campo | Valor |
 |---|---|
-| **Igreja** | Primeira Igreja Batista em Águas Claras (PIBAC) |
+| **Igreja** | Primeira Igreja Batista de Águas Claras (PIBAC) |
 | **Comunicação** | Akza |
 | **Segmento** | Igreja evangélica batista — Convenção Batista Brasileira (CBB), Águas Claras/DF |
 | **Denominação** | Batista. Integra a CBB e a Convenção Batista do Planalto Central (CBPC) |
@@ -35,7 +35,22 @@ atualizado: 2026-09-17
 > **Missão:** "Fazer o maior número de discípulos, de todas as nações, até a volta
 > do Senhor Jesus."
 
-**Tema do ano:** #CONFIRMAR
+**Tema do ano 2026 — 19 anos:**
+
+> **Ideia central:** a santificação **hoje** é o caminho para experimentar as
+> maravilhas de Deus **amanhã**.
+>
+> **Versículo tema:** *"Santificai-vos, porque amanhã o Senhor fará maravilhas
+> no meio de vós."* — **Josué 3:5**
+>
+> **Frase de campanha:** "Este é o nosso tempo!"
+
+O par **hoje → amanhã** é o eixo de tudo que sair este ano: o que se faz agora
+(santificação, preparo, oração) e o que Deus faz depois (maravilhas). Conteúdo
+que só fala de bênção futura sem a parte do preparo perde o tema; conteúdo que
+só cobra santidade sem a promessa também.
+
+📎 Aplicação visual aprovada: `04_PRODUCTION/19-anos-2026/`
 
 ### Agenda fixa — a espinha dorsal do calendário de conteúdo
 
@@ -112,7 +127,11 @@ que horas, onde**.
    testemunho só vão ao ar com consentimento explícito e registrado.
 10. **NÃO** cite versículo sem conferir o texto e a referência na versão adotada
     pela igreja (#CONFIRMAR qual — ARA, NVI, ACF…). Versículo errado em peça
-    impressa é erro que não se corrige depois.
+    impressa é erro que não se corrige depois. **Exceção com forma fixa:** o
+    versículo tema de 2026 (Josué 3:5) já está escrito nas peças oficiais como
+    *"Santificai-vos, porque amanhã o Senhor fará maravilhas no meio de vós."*
+    Use exatamente essa redação — não troque por outra tradução no meio da
+    campanha.
 11. **NÃO** escreva um hex, um tamanho ou um espaçamento à mão em código ou em
     peça. A fonte é `00_BRAND/tokens/tokens.json`; o CSS, o SCSS e o preset do
     Tailwind saem dele por `gerar-tokens.py`. Valor colado na mão é o valor que

@@ -7,7 +7,7 @@ status: parcial
 atualizado: 2026-09-17
 ---
 
-# Briefing — Primeira Igreja Batista em Águas Claras
+# Briefing — Primeira Igreja Batista de Águas Claras
 
 > **Documento:** Briefing de projeto
 > **Fonte:** site oficial pibaguasclaras.org.br, consultado em 17/09/2026
@@ -26,7 +26,7 @@ atualizado: 2026-09-17
 
 | | |
 |---|---|
-| **Nome** | Primeira Igreja Batista em Águas Claras |
+| **Nome** | Primeira Igreja Batista de Águas Claras |
 | **Sigla** | PIBAC |
 | **CNPJ** | 09.392.888/0001-20 |
 | **Denominação** | Batista — Convenção Batista Brasileira (CBB) e Convenção Batista do Planalto Central (CBPC) |
@@ -42,11 +42,13 @@ atualizado: 2026-09-17
 | **Outros canais** | PIBAC TV · Informativo Mensal · #CONFIRMAR (YouTube, Spotify, WhatsApp oficial?) |
 
 > [!NOTE]
-> **Divergência a resolver no onboarding.** O site usa duas formas do nome:
-> "Primeira Igreja Batista **em** Águas Claras" (título e metadados das páginas)
-> e "Primeira Igreja Batista **de** Águas Claras" (rodapé e página do pastor).
-> Precisa de uma decisão: qual é a forma oficial, usada em toda peça. Este
-> repositório adotou **"em"**, que é a do registro no site — sujeito a correção.
+> **Nome oficial: resolvido em 01/10/2026.** É **"Primeira Igreja Batista de
+> Águas Claras"**. O logotipo oficial e as camisetas do tema de 2026 trazem
+> "DE"; o repositório usava "em", que tinha vindo do `<title>` do site. Todo o
+> material foi corrigido.
+>
+> O `<title>` e os metadados do site **continuam com "em"** — vale corrigir lá,
+> porque é o que aparece no Google e no compartilhamento de link.
 
 ---
 
@@ -56,7 +58,10 @@ atualizado: 2026-09-17
 > **Missão:** "Fazer o maior número de discípulos, de todas as nações, até a
 > volta do Senhor Jesus."
 
-**Tema do ano:** #CONFIRMAR
+**Tema do ano 2026:** *"Santificai-vos, porque amanhã o Senhor fará maravilhas
+no meio de vós"* (Josué 3:5) — a santificação hoje como caminho para as
+maravilhas de Deus amanhã, no ano dos **19 anos** da igreja.
+📎 [`02_PLANNING/briefings/19-anos-2026.md`](../02_PLANNING/briefings/19-anos-2026.md)
 
 O par visão/missão é o eixo de tudo: a igreja não se descreve pelo que promove,
 se descreve pelo que forma. Toda linha editorial precisa responder a "isso forma
@@ -87,6 +92,16 @@ Em **19/07/2020**, após processo de sucessão pastoral, a igreja elegeu o
 *Continuação da história entre 2003 e 2020:* #CONFIRMAR — a página do site está
 truncada. Vale pedir o texto completo à secretaria e salvar em
 `01_STRATEGY/_fontes/`.
+
+> [!WARNING]
+> **A conta dos anos não fecha.** A campanha de 2026 celebra **19 anos**, mas a
+> fundação registrada aqui é de **14/12/2002** — o que daria 24. A explicação
+> mais provável é a diferença entre começar como **congregação** (2002) e ser
+> **organizada como igreja** (que daria por volta de 2007).
+>
+> São duas datas, e as duas importam: a campanha celebra uma, a história conta a
+> outra. **Confirmar qual é o marco que a igreja considera seu aniversário** —
+> sem isso, peça de "nossa história" sai com o número errado.
 
 ---
 

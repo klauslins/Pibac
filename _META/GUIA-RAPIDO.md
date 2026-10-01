@@ -17,7 +17,7 @@ fonte: _AKZA/docs/GUIA-RAPIDO.md
 
 ## O que é isto?
 
-Uma pasta organizada com **tudo** da comunicação da Primeira Igreja Batista em Águas Claras:
+Uma pasta organizada com **tudo** da comunicação da Primeira Igreja Batista de Águas Claras:
 logo, documentos de estratégia, roteiros, artes, vídeos e peças prontas.
 
 A organização segue um padrão da Akza que é **igual em todos os clientes**.

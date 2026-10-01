@@ -1,15 +1,15 @@
 ---
 tipo: visao-geral
 cliente: pibac
-titulo: "Primeira Igreja Batista em Águas Claras"
+titulo: "Primeira Igreja Batista de Águas Claras"
 usar_quando: quiser a visao geral do projeto, sendo gente
 status: ativo
 atualizado: 2026-09-10
 ---
 
-# Primeira Igreja Batista em Águas Claras — Projeto de Comunicação
+# Primeira Igreja Batista de Águas Claras — Projeto de Comunicação
 
-> **Igreja:** Primeira Igreja Batista em Águas Claras (PIBAC)
+> **Igreja:** Primeira Igreja Batista de Águas Claras (PIBAC)
 > **Site:** pibaguasclaras.org.br · **Instagram:** [@pib.aguasclaras](https://www.instagram.com/pib.aguasclaras)
 > **Estrutura:** padrão organizacional Akza v1.5
 
