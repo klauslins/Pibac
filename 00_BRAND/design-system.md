@@ -9,9 +9,8 @@ atualizado: 2026-09-17
 
 # Design System — PIBAC
 
-> **Versão** 0.1 (esqueleto) · **Criado em** 17/09/2026
-> **Status:** as pastas e os arquivos existem, as **decisões de design não**.
-> Nada aqui foi inventado — o que falta está em branco, não preenchido por suposição.
+> **Versão** 1.0 · **Criado em** 17/09/2026 · **Paleta fechada em** 16/10/2026
+> **Status:** cor e tipografia decididas e geradas. Falta o vetor do logotipo.
 
 Este é o sistema que faz post, story, informativo, slide de culto, banner e
 impresso parecerem a mesma igreja. Ele não é o gosto de quem desenhou a peça da
@@ -53,8 +52,10 @@ semana: é a decisão registrada, que sobrevive à troca de quem desenha.
      Ex. de estrutura: "[qualidade central] — [três palavras concretas].
      O sistema carrega isso: [decisão de cor], [decisão de tipo], [decisão de foto]." -->
 
-**A definir.** Escreva isto **depois** de decidir cor e tipografia, não antes:
-a frase é o resumo das decisões, não o briefing delas.
+**O azul da igreja, em registro calmo.** O logotipo não mudou — mudou o que está
+em volta dele. O sistema abre o mesmo azul em cinco tons de baixa saturação,
+sobre fundo de areia quente, com terra como detalhe. A marca aparece porque é a
+coisa mais saturada da página, não porque grita.
 
 > [!NOTE]
 > A visão da igreja — *"ser uma igreja de verdadeiros discípulos discipuladores"* —
@@ -77,12 +78,17 @@ produzida** e a marca não é redesenhada nem regerada — nem por IA, nem por
 vetorização automática de um PNG.
 
 ### Cor
-**A definir.** Quantas cores, qual a primária, qual o papel de cada uma.
-Registre em [`cores/paleta.md`](cores/paleta.md) e nos tokens.
+Sete cores, derivadas do matiz 202° do próprio logotipo. `#007CC2` é a marca e
+só ela é saturada; `#242D33` carrega todo o texto; `#A68A69` é detalhe e **nunca**
+texto pequeno. Tabela de contraste medida em [`cores/paleta.md`](cores/paleta.md).
+
+**Preto e dourado não fazem parte do sistema** — são o tema de 19 anos de 2026,
+e vivem em [`../02_PLANNING/briefings/19-anos-2026.md`](../02_PLANNING/briefings/19-anos-2026.md).
 
 ### Tipografia
-**A definir.** Uma família para título, uma para texto — e a licença de cada uma.
-Registre em [`tipografia/tipografia.md`](tipografia/tipografia.md).
+**Montserrat**, em display e texto. É a família que as peças do tema já usam,
+está no Google Fonts (licença livre) e roda em qualquer máquina da equipe.
+Detalhes em [`tipografia/tipografia.md`](tipografia/tipografia.md).
 
 ### Escalas
 Já vêm decididas nos tokens, porque são encanamento e não identidade:
@@ -117,9 +123,10 @@ cores perde o dado. Some ícone, texto ou posição.
 
 | Peça | Status |
 |---|---|
-| Logo em vetor | ⏳ falta o arquivo original |
-| Paleta | ⏳ |
-| Tipografia | ⏳ |
-| Grafismos | ⏳ |
-| Tokens gerados (`tokens.css`, `.scss`, Tailwind) | 🔒 bloqueado até a paleta e a tipografia existirem |
-| `preview.html` | ⏳ mostra o sistema assim que os tokens forem gerados |
+| Paleta | ✅ 16/10/2026 — 7 cores, contraste medido |
+| Tipografia | ✅ Montserrat |
+| Tokens gerados | ✅ 50 tokens em `tokens.css`, `.scss` e Tailwind |
+| `preview.html` | ✅ abra no navegador |
+| Logo em PNG alta resolução | 🟡 provisório, extraído do site |
+| **Logo em vetor** | ⏳ **o que ainda falta** — sem ele não há impresso grande |
+| Grafismos | ⏳ o símbolo (cruz + ondas) é a matéria-prima |

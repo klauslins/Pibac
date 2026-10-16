@@ -9,8 +9,22 @@ atualizado: 2026-09-17
 
 # Logo — PIBAC
 
-> **Status:** 🔴 **nenhum arquivo de marca no repositório ainda.**
-> Enquanto o vetor original não chegar, nenhuma peça nova é produzida.
+> **Status:** 🟡 **PNG provisório em alta resolução. O vetor ainda não apareceu.**
+
+## ⚠️ Leia antes de usar os arquivos que estão aqui
+
+Em `horizontal/png/` há duas versões em **2828 × 953 px** com transparência:
+`logo-h-oficial-v1.png` (azul) e `logo-h-branco-v1.png`.
+
+**Eles foram extraídos do site da igreja**, não entregues pelo autor da marca.
+São muito melhores que os 433 px que o site exibe, e resolvem peça digital — mas
+**não são a fonte da verdade**:
+
+- não servem para impresso grande nem para corte
+- não dão para recolorir sem perda
+- não têm as versões vertical e símbolo
+
+**Trocar por `.ai`/`.svg` assim que aparecerem** — e aí estes saem daqui.
 
 ---
 

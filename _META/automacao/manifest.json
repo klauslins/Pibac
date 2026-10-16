@@ -8,7 +8,7 @@
     "client_contact_marketing": "#CONFIRMAR",
     "website": "pibaguasclaras.org.br",
     "segment": "Igreja evangélica batista — Convenção Batista Brasileira (CBB), Águas Claras/DF",
-    "positioning": "#CONFIRMAR",
+    "positioning": "Igreja batista de bairro, organizada em torno de discipulado",
     "locations": [
       "Rua Jerivá, nº 5, Águas Claras/DF — CEP 71928-360"
     ],
@@ -17,13 +17,13 @@
     "status": "active"
   },
   "brand": {
-    "primary_color": "#CONFIRMAR",
-    "secondary_color": "#CONFIRMAR",
-    "accent_color": "#CONFIRMAR",
+    "primary_color": "#007CC2",
+    "secondary_color": "#475E6B",
+    "accent_color": "#A68A69",
     "fonts": {
-      "primary": "#CONFIRMAR",
-      "secondary": "#CONFIRMAR",
-      "body": "#CONFIRMAR"
+      "primary": "Montserrat",
+      "secondary": "Montserrat",
+      "body": "Montserrat"
     },
     "logo_files": {
       "horizontal_svg": "00_BRAND/logo/horizontal/svg/logo-h-oficial-v1.svg",

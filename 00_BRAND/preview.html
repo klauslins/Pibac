@@ -57,7 +57,7 @@
 <div class="wrap">
 
   <h1>Design System — PIBAC</h1>
-  <p class="sub">Primeira Igreja Batista em Águas Claras · o sistema aplicado, lido direto dos tokens</p>
+  <p class="sub">Primeira Igreja Batista de Águas Claras · o sistema aplicado, lido direto dos tokens</p>
 
   <div id="aviso"></div>
 
@@ -90,11 +90,13 @@ const raiz = getComputedStyle(document.documentElement);
 const ler = n => raiz.getPropertyValue('--pibac-' + n).trim();
 
 const CORES = [
-  ['cor-marca-primaria','Primária'], ['cor-marca-secundaria','Secundária'],
-  ['cor-marca-apoio','Apoio'], ['cor-profunda-primaria','Primária profunda'],
-  ['cor-neutra-clara','Neutra clara'], ['cor-neutra-media','Neutra média'],
-  ['cor-neutra-escura','Neutra escura'], ['cor-texto-padrao','Texto'],
-  ['cor-texto-suave','Texto suave'], ['cor-texto-invertido','Texto invertido'],
+  ['cor-marca-primaria','Marca — o logo'], ['cor-marca-clara','Azul claro'],
+  ['cor-marca-media','Azul médio'], ['cor-marca-profunda','Azul profundo'],
+  ['cor-marca-apoio','Terra — detalhe'],
+  ['cor-neutra-areia','Areia'], ['cor-neutra-media','Neutra média'],
+  ['cor-neutra-tinta','Tinta — o texto'],
+  ['cor-texto-padrao','Texto'], ['cor-texto-suave','Texto suave'],
+  ['cor-texto-invertido','Texto invertido'],
   ['cor-fundo-claro','Fundo claro'], ['cor-fundo-escuro','Fundo escuro'],
 ];
 const TAMANHOS = ['5xl','4xl','3xl','2xl','xl','lg','md','sm','xs'];

@@ -1,0 +1,63 @@
+/*
+ * PIBAC — design tokens
+ * GERADO AUTOMATICAMENTE por _META/automacao/gerar-tokens.py
+ * Nao edite este arquivo. Edite 00_BRAND/tokens/tokens.json e rode o script.
+ */
+
+:root {
+
+  --pibac-cor-marca-primaria: #007CC2;
+  --pibac-cor-marca-clara: #AFD4E9;
+  --pibac-cor-marca-media: #7A97A8;
+  --pibac-cor-marca-profunda: #475E6B;
+  --pibac-cor-marca-apoio: #A68A69;
+  --pibac-cor-neutra-areia: #EFEAE4;
+  --pibac-cor-neutra-media: #ABB7C4;
+  --pibac-cor-neutra-tinta: #242D33;
+  --pibac-cor-texto-padrao: #242D33;
+  --pibac-cor-texto-suave: #5C727F;
+  --pibac-cor-texto-invertido: #EFEAE4;
+  --pibac-cor-fundo-claro: #EFEAE4;
+  --pibac-cor-fundo-escuro: #475E6B;
+
+  --pibac-fonte-familia-display: Montserrat, -apple-system, 'Helvetica Neue', Arial, sans-serif;
+  --pibac-fonte-familia-texto: Montserrat, -apple-system, 'Helvetica Neue', Arial, sans-serif;
+  --pibac-fonte-peso-regular: 400;
+  --pibac-fonte-peso-medio: 500;
+  --pibac-fonte-peso-semibold: 600;
+  --pibac-fonte-peso-bold: 700;
+  --pibac-fonte-tamanho-xs: 0.75rem;
+  --pibac-fonte-tamanho-sm: 0.875rem;
+  --pibac-fonte-tamanho-md: 1rem;
+  --pibac-fonte-tamanho-lg: 1.25rem;
+  --pibac-fonte-tamanho-xl: 1.563rem;
+  --pibac-fonte-tamanho-2xl: 1.953rem;
+  --pibac-fonte-tamanho-3xl: 2.441rem;
+  --pibac-fonte-tamanho-4xl: 3.052rem;
+  --pibac-fonte-tamanho-5xl: 3.815rem;
+  --pibac-fonte-entrelinha-apertada: 1.1;
+  --pibac-fonte-entrelinha-media: 1.35;
+  --pibac-fonte-entrelinha-solta: 1.6;
+  --pibac-fonte-tracking-apertado: -0.02em;
+  --pibac-fonte-tracking-normal: 0;
+  --pibac-fonte-tracking-largo: 0.18em;
+
+  --pibac-espaco-1: 0.25rem;
+  --pibac-espaco-2: 0.5rem;
+  --pibac-espaco-3: 0.75rem;
+  --pibac-espaco-4: 1rem;
+  --pibac-espaco-6: 1.5rem;
+  --pibac-espaco-8: 2rem;
+  --pibac-espaco-12: 3rem;
+  --pibac-espaco-16: 4rem;
+  --pibac-espaco-24: 6rem;
+
+  --pibac-raio-sm: 0.5rem;
+  --pibac-raio-md: 1rem;
+  --pibac-raio-lg: 1.5rem;
+  --pibac-raio-xl: 2rem;
+  --pibac-raio-pilula: 999px;
+
+  --pibac-sombra-suave: 0 2px 12px rgba(36, 45, 51, 0.08);
+  --pibac-sombra-media: 0 8px 28px rgba(36, 45, 51, 0.12);
+}
