@@ -10,6 +10,7 @@ def cor(*p):
     for k in p: n = n[k]
     return n["$value"]
 MARCA, PROFUNDA, TERRA = cor("marca","primaria"), cor("marca","profunda"), cor("marca","apoio")
+
 AREIA, TINTA, SUAVE = cor("neutra","areia"), cor("neutra","tinta"), cor("texto","suave")
 
 def archivo(tam, peso=900, larg=125):
@@ -64,8 +65,13 @@ y += 122
 
 y = txt(M, y, "Rua Jerivá, Lote 5 — próximo ao colégio CIESB", mont(25, "Medium"), SUAVE, espaco=62)
 
-txt(M, y, "BARRACAS", archivo(32, 800), MARCA, espaco=0)
-d.line([(M+196, y+20), (W-M, y+20)], fill=TERRA, width=3)
+# a linha comeca depois da largura real do texto, nunca num valor chutado
+fB = archivo(32, 800)
+bbB = fB.getbbox("BARRACAS")
+txt(M, y, "BARRACAS", fB, MARCA, espaco=0)
+linha_x = M + (bbB[2] - bbB[0]) + 26
+linha_y = y + (bbB[1] + bbB[3]) // 2          # meio da altura das maiusculas
+d.line([(linha_x, linha_y), (W-M, linha_y)], fill=TERRA, width=3)
 y += 60
 
 BARRACAS = [("Churrasco","Min. Homens"), ("Caldos","Min. Juventude"),
