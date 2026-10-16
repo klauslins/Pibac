@@ -86,9 +86,11 @@ texto pequeno. Tabela de contraste medida em [`cores/paleta.md`](cores/paleta.md
 e vivem em [`../02_PLANNING/briefings/19-anos-2026.md`](../02_PLANNING/briefings/19-anos-2026.md).
 
 ### Tipografia
-**Montserrat**, em display e texto. É a família que as peças do tema já usam,
-está no Google Fonts (licença livre) e roda em qualquer máquina da equipe.
-Detalhes em [`tipografia/tipografia.md`](tipografia/tipografia.md).
+Duas famílias, uma regra: **caixa alta convida, caixa baixa acolhe.**
+**Archivo Expanded** Black para anúncio em caixa alta; **Montserrat** para
+afirmação em caixa baixa e todo o apoio. As duas do Google Fonts, licença livre.
+Detalhes em [`tipografia/tipografia.md`](tipografia/tipografia.md) e a anatomia
+da peça em [`grafismos/grafismos.md`](grafismos/grafismos.md).
 
 ### Escalas
 Já vêm decididas nos tokens, porque são encanamento e não identidade:
@@ -129,4 +131,5 @@ cores perde o dado. Some ícone, texto ou posição.
 | `preview.html` | ✅ abra no navegador |
 | Logo em PNG alta resolução | 🟡 provisório, extraído do site |
 | **Logo em vetor** | ⏳ **o que ainda falta** — sem ele não há impresso grande |
-| Grafismos | ⏳ o símbolo (cruz + ondas) é a matéria-prima |
+| Anatomia da peça | ✅ 16/10/2026 — os dois registros e a estrutura do quadro |
+| Grafismos em arquivo | ⏳ extrair a onda e o bloco do vetor, no Illustrator |

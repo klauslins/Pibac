@@ -50,7 +50,7 @@ regras e o contexto da marca. Este índice é o passo seguinte.
 |---|---|
 | [Paleta](../00_BRAND/cores/paleta.md) | precisar decidir ou conferir qual cor usar numa peca |
 | [Design System](../00_BRAND/design-system.md) | for desenhar qualquer peca da igreja — comece por aqui |
-| [Grafismos](../00_BRAND/grafismos/grafismos.md) | for montar a arte de um post, story ou slide e precisar da anatomia da peca |
+| [Grafismos e anatomia da peca](../00_BRAND/grafismos/grafismos.md) | for montar a arte de um post, story ou slide e precisar da anatomia da peca |
 | [Logo](../00_BRAND/logo/logo.md) | for aplicar, redimensionar ou exportar a marca da igreja |
 | [Tipografia](../00_BRAND/tipografia/tipografia.md) | for escolher fonte, tamanho ou hierarquia de texto numa peca |
 

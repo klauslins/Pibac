@@ -16,6 +16,21 @@ Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.0.0/).
 
 ## [Não publicado]
 
+### Adicionado — 16/10/2026
+- **Archivo Expanded entra como tipografia de display** (`fonte.familia.display`),
+  nos pesos Bold e Black. Montserrat continua para caixa baixa e apoio. As duas
+  do Google Fonts, licença OFL
+- Tokens novos: `fonte.peso.black` (900) e `fonte.entrelinha.colada` (0.92) — a
+  entrelinha que forma o bloco sólido de texto em caixa alta
+- **A regra dos dois registros:** caixa alta convida, caixa baixa acolhe. Nunca
+  os dois no mesmo quadro — peça que mistura perde a intenção
+- `grafismos/grafismos.md`, vazio desde setembro, recebe a **anatomia da peça**
+  extraída de onze referências escolhidas pela igreja: texto como protagonista
+  ocupando metade do quadro, entrelinha colada, foto dessaturada, texto só em
+  branco ou creme, alinhado à esquerda
+- Registrado que as **ondas e o bloco com cruz do próprio símbolo** são o
+  repertório gráfico da igreja — basta extrair do vetor, nada a inventar
+
 ### Organizado — 16/10/2026
 - **400 fotos editadas arquivadas**, vindas de `~/Downloads`: culto de **04/10**
   (234), **11/10** separado em culto (88) e **EBD** (19, manhã), e um culto de

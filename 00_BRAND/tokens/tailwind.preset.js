@@ -30,8 +30,8 @@ module.exports = {
       },
       "fontFamily": {
         "display": [
-          "Montserrat",
-          "-apple-system",
+          "Archivo Expanded",
+          "Archivo",
           "Helvetica Neue",
           "Arial",
           "sans-serif"
@@ -48,7 +48,8 @@ module.exports = {
         "regular": "400",
         "medio": "500",
         "semibold": "600",
-        "bold": "700"
+        "bold": "700",
+        "black": "900"
       },
       "fontSize": {
         "xs": "0.75rem",
@@ -62,6 +63,7 @@ module.exports = {
         "5xl": "3.815rem"
       },
       "lineHeight": {
+        "colada": "0.92",
         "apertada": "1.1",
         "media": "1.35",
         "solta": "1.6"

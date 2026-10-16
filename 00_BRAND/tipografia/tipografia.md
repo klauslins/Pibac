@@ -11,29 +11,48 @@ atualizado: 2026-09-17
 
 > **Fonte da verdade:** [`../tokens/tokens.json`](../tokens/tokens.json), bloco `fonte`.
 > **Arquivos:** `primaria/`, `secundaria/`, `textos/` — nesta mesma pasta.
-> **Status:** a definir.
+> **Status:** ativo desde 16/10/2026.
 
 ---
 
 ## As famílias
 
-<!-- PREENCHER. Duas famílias resolvem 95% dos casos: uma de display para
-     título, uma de texto para o resto. Três já é uma a mais. -->
+Duas, e cada uma tem uma função que a outra não cobre.
 
-| Papel | Família | Token | Onde usar |
+| Registro | Família | Token | Quando |
 |---|---|---|---|
-| **Display** | A definir | `fonte.familia.display` | Título, chamada, capa de carrossel |
-| **Texto** | A definir | `fonte.familia.texto` | Corpo, legenda, interface, slide |
+| **Anúncio** | **Archivo Expanded**, Bold e Black | `fonte.familia.display` | Convite, chamada de culto, evento. **Sempre caixa alta** |
+| **Afirmação e apoio** | **Montserrat**, Light a Bold | `fonte.familia.texto` | Frase pastoral, versículo, legenda, endereço, crédito |
 
-> [!IMPORTANT]
-> **Licença.** Antes de adotar, verifique se a licença cobre uso da igreja —
-> impresso, redes, site e projeção. Fonte do Google Fonts resolve isso de saída
-> (SIL Open Font License) e ainda funciona em qualquer computador do time.
-> Registre a licença aqui:
->
-> | Família | Licença | Pode: impresso / web / projeção |
-> |---|---|---|
-> | | | |
+Ambas são do **Google Fonts, licença OFL** — livres para impresso, web e
+projeção, e instalam em qualquer máquina da equipe.
+
+```
+Archivo:    https://fonts.google.com/specimen/Archivo
+Montserrat: https://fonts.google.com/specimen/Montserrat
+```
+
+> **A Archivo é variável, com eixo de largura.** O que se quer aqui é a largura
+> **Expanded** (`wdth` em 125) no peso 700–900. No CSS:
+> `font-family: Archivo; font-variation-settings: 'wdth' 125; font-weight: 900`.
+> Se a máquina só tiver a estática, o nome do arquivo é `Archivo Expanded Black`.
+
+---
+
+## A regra que decide qual usar
+
+> ## Caixa alta convida. Caixa baixa acolhe.
+
+Não é escolha estética — é a intenção da peça.
+
+| A peça está… | Registro | Exemplo |
+|---|---|---|
+| **Chamando** alguém para vir | Archivo, **CAIXA ALTA** | "HOJE TEM CULTO", "VENHA DOMINGO ÀS 18H" |
+| **Consolando, ensinando, afirmando** | Montserrat, **caixa baixa** | "Deus muda o medo", "Uma igreja não é só um lugar" |
+
+**Nunca misture os dois registros no mesmo quadro.** Peça que mistura perde a
+intenção: vira anúncio com cara de devocional, ou devocional com cara de
+anúncio.
 
 ---
 
@@ -54,8 +73,17 @@ Já vem definida nos tokens — escala modular de razão 1.25, de `xs` a `5xl`.
 | `fonte.tamanho.sm` | 0.875rem | Apoio |
 | `fonte.tamanho.xs` | 0.75rem | Crédito, rodapé, obrigatoriedade |
 
-**Entrelinha:** `apertada` (1.1) para título, `media` (1.35) para corpo,
-`solta` (1.6) para texto longo.
+**Entrelinha:**
+
+| Token | Valor | Para |
+|---|---|---|
+| `colada` | **0.92** | **Display em caixa alta.** As linhas quase se tocam — é isso que forma o bloco sólido de texto |
+| `apertada` | 1.1 | Título em caixa baixa |
+| `media` | 1.35 | Corpo |
+| `solta` | 1.6 | Texto longo |
+
+A entrelinha colada é o detalhe que mais separa uma peça de igreja bem
+tipografada de uma amadora. Linha solta em caixa alta gigante parece erro.
 
 ---
 

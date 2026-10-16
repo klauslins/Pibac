@@ -20,12 +20,13 @@
   --pibac-cor-fundo-claro: #EFEAE4;
   --pibac-cor-fundo-escuro: #475E6B;
 
-  --pibac-fonte-familia-display: Montserrat, -apple-system, 'Helvetica Neue', Arial, sans-serif;
+  --pibac-fonte-familia-display: 'Archivo Expanded', Archivo, 'Helvetica Neue', Arial, sans-serif;
   --pibac-fonte-familia-texto: Montserrat, -apple-system, 'Helvetica Neue', Arial, sans-serif;
   --pibac-fonte-peso-regular: 400;
   --pibac-fonte-peso-medio: 500;
   --pibac-fonte-peso-semibold: 600;
   --pibac-fonte-peso-bold: 700;
+  --pibac-fonte-peso-black: 900;
   --pibac-fonte-tamanho-xs: 0.75rem;
   --pibac-fonte-tamanho-sm: 0.875rem;
   --pibac-fonte-tamanho-md: 1rem;
@@ -35,6 +36,7 @@
   --pibac-fonte-tamanho-3xl: 2.441rem;
   --pibac-fonte-tamanho-4xl: 3.052rem;
   --pibac-fonte-tamanho-5xl: 3.815rem;
+  --pibac-fonte-entrelinha-colada: 0.92;
   --pibac-fonte-entrelinha-apertada: 1.1;
   --pibac-fonte-entrelinha-media: 1.35;
   --pibac-fonte-entrelinha-solta: 1.6;
