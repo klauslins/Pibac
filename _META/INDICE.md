@@ -4,7 +4,7 @@ cliente: Pibac
 titulo: Índice do projeto Pibac
 usar_quando: precisar descobrir qual documento responde uma pergunta
 status: ativo
-atualizado: 2026-10-01
+atualizado: 2026-10-16
 ---
 
 # Índice — Pibac

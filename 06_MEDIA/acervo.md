@@ -4,7 +4,7 @@ cliente: pibac
 titulo: Acervo de fotos
 usar_quando: precisar achar as fotos de um culto ou evento, ou saber o que existe de registro
 status: ativo
-atualizado: 2026-09-20
+atualizado: 2026-10-16
 ---
 
 # Acervo de fotos
@@ -14,31 +14,36 @@ atualizado: 2026-09-20
 > público. Este documento é o **catálogo**: ele fica versionado para que dê
 > para saber o que existe sem estar com o disco na mão.
 
-20 sessões · 2436 arquivos.
+25 sessões · 2923 arquivos.
 A data de cada pasta é a de **captura**, lida do EXIF `DateTimeOriginal`.
 
 | Pasta | O que é | Horário | Arquivos | Tamanho |
 |---|---|---|---|---|
 | `2026-03-29-culto-celebracao` | Culto de Celebração | 18h08–20h07 | 27 | 286M |
+| `2026-05-17-culto-celebracao` | Culto de Celebração | 18h08–20h08 | 56 | 476M |
 | `2026-05-31-culto-celebracao` | Culto de Celebração | 18h10–20h22 | 115 | 807M |
 | `2026-06-07-culto-celebracao` | Culto de Celebração | 18h03–20h07 | 65 | 572M |
 | `2026-06-14-culto-celebracao` | Culto de Celebração | 18h10–20h31 | 128 | 1.0G |
-| `2026-06-21-culto-celebracao` | Culto de Celebração | 18h08–20h05 | 50 | 386M |
+| `2026-06-21-culto-celebracao` | Culto de Celebração | 18h08–20h05 | 57 | 410M |
 | `2026-07-05-casados-para-sempre` | Evento **Casados para Sempre** — manhã de domingo | 11h40–11h59 | 163 | 1.5G |
 | `2026-07-05-culto-celebracao` | Culto de Celebração | 18h02–19h58 | 154 | 1.6G |
 | `2026-07-12-culto-celebracao` | Culto de Celebração | 18h06–20h18 | 138 | 1.4G |
 | `2026-07-19-culto-celebracao` | Culto de Celebração | 18h19–19h39 | 58 | 169M |
 | `2026-07-26-culto-celebracao` | Culto de Celebração | 18h10–20h24 | 50 | 381M |
 | `2026-08-02-culto-celebracao` | Culto de Celebração | 18h11–20h10 | 74 | 219M |
-| `2026-08-09-culto-celebracao` | Culto de Celebração — ⚠️ só 1 foto, resto do material não localizado | 20h12 | 1 | 6.0M |
+| `2026-08-09-culto-celebracao` | Culto de Celebração — ⚠️ só 1 foto, resto não localizado | 20h12 | 1 | 6.0M |
 | `2026-08-09-ebd` | **EBD** — Escola Bíblica Dominical | 09h28–10h15 | 98 | 875M |
-| `2026-08-15-missao-canada-familia-moises` | **Envio missionário** — família do irmão Moisés, que vai ao Canadá. Ensaio para divulgação | 17h38–17h40 | 24 | 133M |
+| `2026-08-15-missao-canada-familia-moises` | **Envio missionário** — família do irmão Moisés, que vai ao Canadá | 17h38–17h40 | 24 | 133M |
 | `2026-08-16-culto-celebracao` | Culto de Celebração | 17h47–20h20 | 185 | 1.2G |
-| `2026-08-22-casa-viver` | Evento **Casa Viver** — sábado, manhã inteira. Inclui fotos de drone | 07h20–12h04 | 483 | 3.6G |
+| `2026-08-22-casa-viver` | Evento **Casa Viver** — sábado, manhã inteira. Inclui drone | 07h20–12h04 | 483 | 3.6G |
 | `2026-08-23-culto-celebracao` | Culto de Celebração | 19h04–20h31 | 238 | 1.6G |
 | `2026-08-30-culto-celebracao` | Culto de Celebração | 18h08–20h01 | 97 | 535M |
 | `2026-09-06-culto-celebracao` | Culto de Celebração | 18h34–20h20 | 127 | 754M |
 | `2026-09-13-culto-celebracao` | Culto de Celebração | 17h58–20h24 | 161 | 1.4G |
+| `2026-09-20-culto-celebracao` | Culto de Celebração — **já editadas** | — | 83 | 630M |
+| `2026-10-04-culto-celebracao` | Culto de Celebração — **já editadas** | 18h21–20h08 | 234 | 1.5G |
+| `2026-10-11-culto-celebracao` | Culto de Celebração — **já editadas** | 18h00–20h02 | 88 | 663M |
+| `2026-10-11-ebd` | **EBD** — Escola Bíblica Dominical — **já editadas** | 09h25–09h48 | 19 | 110M |
 
 ---
 
@@ -96,6 +101,7 @@ tipo de erro que só se descobre depois de publicado.
 |---|---|
 | **Culto de 09/08 (noite)** | Existe 1 foto só. Naquele domingo parece que só a EBD foi coberta |
 | **Domingo 28/06** | Sem registro nenhum |
+| **Domingo 27/09** | Sem registro nenhum — não está no acervo, no cartão nem no Downloads |
 | **`_a-triar/`** | 103 itens: export de Photoshop, projeto de After Effects e PNG com nome sem significado, que estavam misturados às fotos. Nada foi apagado — esperam triagem |
 
 A origem de cada arquivo movido está em

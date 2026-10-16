@@ -16,6 +16,25 @@ Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.0.0/).
 
 ## [Não publicado]
 
+### Organizado — 16/10/2026
+- **400 fotos editadas arquivadas**, vindas de `~/Downloads`: culto de **04/10**
+  (234), **11/10** separado em culto (88) e **EBD** (19, manhã), e um culto de
+  **17/05** (59) que estava solto em `Downloads/01_CLIENTES/PIBAC/Domingo` e não
+  constava no acervo
+- A pasta `2026-09-20 Culto Celebraçao` estava fora do padrão — espaço, acento e
+  sem o til. Virou `2026-09-20-culto-celebracao`, e os 7 PNG que estavam
+  misturados às fotos foram para `_a-triar/`
+- **528 RAW de 04/10 e 11/10 foram para o Lixo** depois das editadas estarem
+  arquivadas e conferidas. A seleção foi por EXIF, não pela data do arquivo
+- `Downloads/Fotos igreja` foi para o Lixo depois da conferência por MD5
+- Nada foi apagado de vez: tudo está no Lixo, com "Colocar de volta"
+- Acervo agora: **25 sessões, 2.923 arquivos**
+
+### Pendente
+- **Domingo 27/09 não tem registro** — nem no acervo, nem no cartão, nem no Downloads
+- Restam no cartão 623 RAW não arquivadas: 15/08 (37), 16/08 (324), 19/08 (116),
+  21/08 (142) e 08/09 (4). As de 19/08 e 21/08 não estão no acervo de forma nenhuma
+
 ### Adicionado — 01/10/2026
 - **Tema do ano de 2026 definido e registrado:** *"Santificai-vos, porque amanhã
   o Senhor fará maravilhas no meio de vós"* (Josué 3:5), no ano dos 19 anos.
