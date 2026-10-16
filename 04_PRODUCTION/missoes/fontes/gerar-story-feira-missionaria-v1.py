@@ -34,7 +34,13 @@ art = Image.new("RGB", (W, H), AREIA)
 d = ImageDraw.Draw(art)
 
 molde = Image.open(f"{REPO}/04_PRODUCTION/missoes/fontes/molde-video-missoes-v1.psd").convert("RGBA")
-art.paste(molde, (0, 0), molde)            # topo e rodape do molde aprovado
+# o molde tem dois blocos: topo em 0-374 e rodape em 1393-1761. O rodape e
+# colado rente ao pe da peca, para nao sobrar faixa de fundo embaixo dele.
+topo = molde.crop((0, 0, W, 374))
+rodape = molde.crop((0, 1393, W, 1761))
+art.paste(topo, (0, 0), topo)
+RODAPE_Y = H - rodape.height
+art.paste(rodape, (0, RODAPE_Y), rodape)
 
 M = 84                                      # margem lateral
 def txt(x, y, s, fonte, fill, anchor="la", espaco=None):
@@ -82,4 +88,4 @@ txt(M, y, "ROMANOS 10.14,15", mont(20, "Bold"), MARCA, espaco=0)
 y += 24
 
 art.save(f"{SP}/arte/story-feira-missionaria-v1.png")
-print("gerado:", art.size, "| miolo termina em y =", y, "| rodape comeca em 1393 ->", "OK" if y < 1393 else "INVADE")
+print("gerado:", art.size, "| miolo termina em y =", y, "| rodape comeca em", RODAPE_Y, "->", "OK" if y < RODAPE_Y else "INVADE")
