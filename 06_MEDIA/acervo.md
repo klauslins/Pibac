@@ -101,7 +101,7 @@ tipo de erro que só se descobre depois de publicado.
 |---|---|
 | **Culto de 09/08 (noite)** | Existe 1 foto só. Naquele domingo parece que só a EBD foi coberta |
 | **Domingo 28/06** | Sem registro nenhum |
-| **Domingo 27/09** | Material existe, **aguardando edição**. Entra no acervo depois |
+| **Domingo 27/09** | **Sem cobertura** — o fotógrafo não esteve neste culto. Não é material perdido: nunca foi fotografado |
 | **`_a-triar/`** | 103 itens: export de Photoshop, projeto de After Effects e PNG com nome sem significado, que estavam misturados às fotos. Nada foi apagado — esperam triagem |
 
 A origem de cada arquivo movido está em
