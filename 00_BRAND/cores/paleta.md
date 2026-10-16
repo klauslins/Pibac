@@ -47,6 +47,23 @@ a decisão.
 Completam o conjunto `cor.neutra.media` `#ABB7C4` (borda, separador) e
 `cor.texto.suave` `#5C727F` (legenda, crédito).
 
+> [!IMPORTANT]
+> **Há duas versões do azul da marca, e isso precisa de uma decisão.**
+>
+> | Origem | Valor | Como foi obtido |
+> |---|---|---|
+> | **Token do sistema** | `#007CC2` | amostrado do PNG do site da igreja |
+> | **Vetor oficial** | `#00AEEF` | ciano puro, `CMYK 100/0/0/0`, lido dentro do `.ai` |
+>
+> O sistema segue com `#007CC2`, por decisão. Mas o arquivo de marca em
+> [`../logo/horizontal/ai/`](../logo/horizontal/ai/) é **ciano**, e isso tem
+> consequência prática: numa peça digital que use `cor.marca.primaria` ao lado do
+> logotipo, os dois azuis não vão bater.
+>
+> **Para resolver, só duas saídas:** ou o token passa a ser `#00AEEF`, ou o
+> logotipo ganha uma versão oficial em `#007CC2` exportada do Illustrator.
+> Enquanto não se decidir, não use a cor do token encostada no logotipo.
+
 > [!NOTE]
 > **A cor `tinta` não veio da referência — foi derivada.** A paleta escolhida não
 > tinha nenhuma cor escura o bastante para texto corrido: a melhor delas chegava

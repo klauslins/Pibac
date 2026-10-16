@@ -9,24 +9,30 @@ atualizado: 2026-09-17
 
 # Logo — PIBAC
 
-> **Status:** 🟡 **PNG provisório em alta resolução. O vetor ainda não apareceu.**
+> **Status:** 🟢 **vetor oficial no repositório.**
 
-## ⚠️ Leia antes de usar os arquivos que estão aqui
+## O que temos
 
-Em `horizontal/png/` há duas versões em **2828 × 953 px** com transparência:
-`logo-h-oficial-v1.png` (azul) e `logo-h-branco-v1.png`.
+`horizontal/ai/logo-h-oficial-v1.ai` — o arquivo original do Illustrator, com os
+**dois modelos** na mesma prancheta.
 
-**Eles foram extraídos do site da igreja**, não entregues pelo autor da marca.
-São muito melhores que os 433 px que o site exibe, e resolvem peça digital — mas
-**não são a fonte da verdade**:
+| Modelo | Arquivo PNG | Quando usar |
+|---|---|---|
+| **Sigla** — símbolo + `PIBAC` | `logo-h-sigla-v1.png` · 5654×1622 | Espaço curto, uso interno, quando a igreja já é conhecida no contexto |
+| **Nome completo** — símbolo + `PRIMEIRA IGREJA BATISTA DE ÁGUAS CLARAS` | `logo-h-completo-v1.png` · 5504×1622 | Institucional, impresso, primeira apresentação da igreja |
 
-- não servem para impresso grande nem para corte
-- não dão para recolorir sem perda
-- não têm as versões vertical e símbolo
+Os PNG foram **exportados do próprio vetor**, com transparência. O
+`logo-h-branco-v1.png` ainda é o da web — trocar por export do Illustrator.
 
-**Trocar por `.ai`/`.svg` assim que aparecerem** — e aí estes saem daqui.
+> **Cor:** o vetor é **ciano puro, `CMYK 100/0/0/0`** (`#00AEEF` em tela). O
+> token `cor.marca.primaria` do sistema é `#007CC2`. Ver a nota em
+> [`../cores/paleta.md`](../cores/paleta.md) — é decisão em aberto.
 
----
+## Ainda falta
+
+- **`.svg`** para web e **`.eps`** para gráfica — exportar do Illustrator
+- As versões **vertical** e **símbolo isolado**
+- A versão **branca/monocromática** saída do vetor, não da web
 
 ## A regra que vem antes de todas
 
