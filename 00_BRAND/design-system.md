@@ -130,8 +130,7 @@ cores perde o dado. Some ícone, texto ou posição.
 | Tokens gerados | ✅ 50 tokens em `tokens.css`, `.scss` e Tailwind |
 | `preview.html` | ✅ abra no navegador |
 | Logo em PNG alta resolução | ✅ exportado do vetor |
-| Logo em SVG — sigla | ✅ texto em contorno |
-| Logo em SVG — nome completo | 🔴 texto vivo, renderiza em serifa. Reexportar |
+| Logo em SVG — sigla e nome completo | ✅ texto em contorno nos dois |
 | **Logo em vetor** | ⏳ **o que ainda falta** — sem ele não há impresso grande |
 | Anatomia da peça | ✅ 16/10/2026 — os dois registros e a estrutura do quadro |
 | Grafismos em arquivo | ⏳ extrair a onda e o bloco do vetor, no Illustrator |

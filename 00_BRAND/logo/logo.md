@@ -24,22 +24,23 @@ atualizado: 2026-09-17
 Os PNG foram **exportados do próprio vetor**, com transparência. O
 `logo-h-branco-v1.png` ainda é o da web — trocar por export do Illustrator.
 
-### Os SVG — um pronto, um pendente
+### Os SVG — os dois prontos
 
-| Arquivo | Estado |
-|---|---|
-| `logo-h-sigla-v1.svg` | ✅ **pronto.** Texto em contorno, 47 paths, nenhuma dependência de fonte |
-| `logo-h-completo-v1.svg` | 🔴 **quebrado.** O texto ficou vivo, chamando `font-family: Nexa-Heavy` |
+| Arquivo | Paths | Estado |
+|---|---|---|
+| `logo-h-sigla-v1.svg` | 47 | ✅ texto em contorno |
+| `logo-h-completo-v1.svg` | 38 | ✅ texto em contorno |
 
-**O problema do arquivo quebrado:** em qualquer máquina sem a Nexa Heavy
-instalada, o navegador troca por uma fonte de sistema e **o nome da igreja
-aparece em serifa**. Conferido lado a lado com o PNG — o SVG renderiza em Times.
+Nenhum dos dois depende de fonte instalada: o texto virou vetor. Renderizam
+igual em qualquer máquina, que é o que um logotipo em SVG precisa fazer.
 
-**O conserto, no Illustrator:** selecionar o texto → **Tipo → Criar contornos**
-(`⇧⌘O`) → exportar de novo. Foi exatamente o que foi feito na sigla, e funcionou.
-
-Enquanto o do nome completo não for refeito, **use o PNG** para esse modelo. O
-PNG veio do `.ai`, onde a fonte está embutida, e está correto.
+> **O que estava errado antes:** o primeiro SVG saiu com o texto vivo, chamando
+> `font-family: Nexa-Heavy`. Em máquina sem essa fonte, o nome da igreja
+> aparecia em serifa — e nem a máquina da agência tem a Nexa Heavy. O conserto
+> foi **Tipo → Criar contornos** (`⇧⌘O`) antes de exportar.
+>
+> Vale para qualquer SVG de marca daqui para a frente: **texto sempre em
+> contorno.**
 
 **A fonte do wordmark é Nexa Heavy** — geométrica, da Fontfabric. Fica
 registrado porque é o que permite refazer a assinatura se um dia for preciso.
@@ -53,7 +54,6 @@ registrado porque é o que permite refazer a assinatura se um dia for preciso.
 
 ## Ainda falta
 
-- **Reexportar o SVG com o texto em contorno** — é o conserto mais urgente
 - **Uma versão em `#007CC2`** para tela — é o que fecha a divergência de cor
 - **`.svg` do modelo de sigla** e **`.eps`** para gráfica
 - As versões **vertical** e **símbolo isolado**
