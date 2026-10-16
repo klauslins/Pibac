@@ -24,9 +24,28 @@ atualizado: 2026-09-17
 Os PNG foram **exportados do próprio vetor**, com transparência. O
 `logo-h-branco-v1.png` ainda é o da web — trocar por export do Illustrator.
 
-**SVG:** `horizontal/svg/logo-h-completo-v1.svg` — o modelo de nome completo, em
-vetor limpo (8 paths). É o arquivo para web e para qualquer aplicação que
-precise escalar sem perda. **O modelo de sigla ainda não tem SVG.**
+### ⚠️ O SVG está quebrado — não use ainda
+
+`horizontal/svg/logo-h-completo-v1.svg` **não teve o texto convertido em
+contorno.** Só o símbolo está vetorizado (8 paths); o nome da igreja ficou como
+texto vivo, chamando `font-family: Nexa-Heavy, Nexa`.
+
+**Consequência:** em qualquer máquina sem a Nexa Heavy instalada, o navegador
+troca por uma fonte de sistema e **o nome da igreja aparece em serifa**. Foi
+exatamente o que aconteceu no teste — inclusive na máquina da agência, que tem
+só uma *Nexa Slab Bold*, fonte diferente.
+
+**Como consertar, no Illustrator:** selecionar o texto → **Tipo → Criar
+contornos** (`⇧⌘O`) → salvar como novo SVG. Ou, ao exportar, marcar a opção de
+converter texto em contorno.
+
+Enquanto isso não for feito, **use o PNG**. O PNG veio do `.ai`, onde a fonte
+está embutida, e está correto.
+
+**A fonte do wordmark é Nexa Heavy** — geométrica, da Fontfabric. Fica
+registrado porque é o que permite refazer a assinatura se um dia for preciso.
+
+**O modelo de sigla ainda não tem SVG.**
 
 > **Cor:** no arquivo o azul é **`CMYK 100/0/0/0`**, ciano de escala — e é assim
 > que vai para a gráfica. Em tela o SVG carrega **`#009BDB`**, enquanto a cor
@@ -35,6 +54,7 @@ precise escalar sem perda. **O modelo de sigla ainda não tem SVG.**
 
 ## Ainda falta
 
+- **Reexportar o SVG com o texto em contorno** — é o conserto mais urgente
 - **Uma versão em `#007CC2`** para tela — é o que fecha a divergência de cor
 - **`.svg` do modelo de sigla** e **`.eps`** para gráfica
 - As versões **vertical** e **símbolo isolado**
