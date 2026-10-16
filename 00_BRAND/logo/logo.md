@@ -24,23 +24,22 @@ atualizado: 2026-09-17
 Os PNG foram **exportados do próprio vetor**, com transparência. O
 `logo-h-branco-v1.png` ainda é o da web — trocar por export do Illustrator.
 
-### ⚠️ O SVG está quebrado — não use ainda
+### Os SVG — um pronto, um pendente
 
-`horizontal/svg/logo-h-completo-v1.svg` **não teve o texto convertido em
-contorno.** Só o símbolo está vetorizado (8 paths); o nome da igreja ficou como
-texto vivo, chamando `font-family: Nexa-Heavy, Nexa`.
+| Arquivo | Estado |
+|---|---|
+| `logo-h-sigla-v1.svg` | ✅ **pronto.** Texto em contorno, 47 paths, nenhuma dependência de fonte |
+| `logo-h-completo-v1.svg` | 🔴 **quebrado.** O texto ficou vivo, chamando `font-family: Nexa-Heavy` |
 
-**Consequência:** em qualquer máquina sem a Nexa Heavy instalada, o navegador
-troca por uma fonte de sistema e **o nome da igreja aparece em serifa**. Foi
-exatamente o que aconteceu no teste — inclusive na máquina da agência, que tem
-só uma *Nexa Slab Bold*, fonte diferente.
+**O problema do arquivo quebrado:** em qualquer máquina sem a Nexa Heavy
+instalada, o navegador troca por uma fonte de sistema e **o nome da igreja
+aparece em serifa**. Conferido lado a lado com o PNG — o SVG renderiza em Times.
 
-**Como consertar, no Illustrator:** selecionar o texto → **Tipo → Criar
-contornos** (`⇧⌘O`) → salvar como novo SVG. Ou, ao exportar, marcar a opção de
-converter texto em contorno.
+**O conserto, no Illustrator:** selecionar o texto → **Tipo → Criar contornos**
+(`⇧⌘O`) → exportar de novo. Foi exatamente o que foi feito na sigla, e funcionou.
 
-Enquanto isso não for feito, **use o PNG**. O PNG veio do `.ai`, onde a fonte
-está embutida, e está correto.
+Enquanto o do nome completo não for refeito, **use o PNG** para esse modelo. O
+PNG veio do `.ai`, onde a fonte está embutida, e está correto.
 
 **A fonte do wordmark é Nexa Heavy** — geométrica, da Fontfabric. Fica
 registrado porque é o que permite refazer a assinatura se um dia for preciso.
