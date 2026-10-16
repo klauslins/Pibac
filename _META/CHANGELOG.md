@@ -16,6 +16,17 @@ Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.0.0/).
 
 ## [Não publicado]
 
+### Adicionado — 16/10/2026 (SVG)
+- `00_BRAND/logo/horizontal/svg/logo-h-completo-v1.svg` — o modelo de nome
+  completo em vetor limpo, 8 paths. É o arquivo para web
+
+### Corrigido — 16/10/2026
+- **O azul do logotipo em tela é `#009BDB`, não `#00AEEF`.** O `#00AEEF` tinha
+  saído da minha renderização do `.ai`, uma conversão de CMYK para RGB sem
+  gestão de cor. O SVG foi exportado pelo próprio Illustrator, com perfil
+  aplicado, e carrega `#009BDB` — é esse o valor que o navegador pinta.
+  No arquivo o azul continua sendo `CMYK 100/0/0/0`
+
 ### Adicionado — 16/10/2026
 - **Archivo Expanded entra como tipografia de display** (`fonte.familia.display`),
   nos pesos Bold e Black. Montserrat continua para caixa baixa e apoio. As duas

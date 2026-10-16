@@ -24,13 +24,18 @@ atualizado: 2026-09-17
 Os PNG foram **exportados do próprio vetor**, com transparência. O
 `logo-h-branco-v1.png` ainda é o da web — trocar por export do Illustrator.
 
-> **Cor:** o vetor é **ciano puro, `CMYK 100/0/0/0`** (`#00AEEF` em tela). O
-> token `cor.marca.primaria` do sistema é `#007CC2`. Ver a nota em
-> [`../cores/paleta.md`](../cores/paleta.md) — é decisão em aberto.
+**SVG:** `horizontal/svg/logo-h-completo-v1.svg` — o modelo de nome completo, em
+vetor limpo (8 paths). É o arquivo para web e para qualquer aplicação que
+precise escalar sem perda. **O modelo de sigla ainda não tem SVG.**
+
+> **Cor:** no arquivo o azul é **`CMYK 100/0/0/0`**, ciano de escala. Em tela, o
+> SVG exportado pelo Illustrator carrega **`#009BDB`** — é esse o valor que o
+> navegador pinta. O token `cor.marca.primaria` do sistema é `#007CC2`. Ver a
+> nota em [`../cores/paleta.md`](../cores/paleta.md) — decisão em aberto.
 
 ## Ainda falta
 
-- **`.svg`** para web e **`.eps`** para gráfica — exportar do Illustrator
+- **`.svg` do modelo de sigla** e **`.eps`** para gráfica
 - As versões **vertical** e **símbolo isolado**
 - A versão **branca/monocromática** saída do vetor, não da web
 

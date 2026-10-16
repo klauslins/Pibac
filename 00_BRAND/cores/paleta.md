@@ -53,14 +53,18 @@ Completam o conjunto `cor.neutra.media` `#ABB7C4` (borda, separador) e
 > | Origem | Valor | Como foi obtido |
 > |---|---|---|
 > | **Token do sistema** | `#007CC2` | amostrado do PNG do site da igreja |
-> | **Vetor oficial** | `#00AEEF` | ciano puro, `CMYK 100/0/0/0`, lido dentro do `.ai` |
+> | **Vetor oficial** | `#009BDB` | do SVG exportado pelo Illustrator, com gestão de cor |
 >
 > O sistema segue com `#007CC2`, por decisão. Mas o arquivo de marca em
 > [`../logo/horizontal/ai/`](../logo/horizontal/ai/) é **ciano**, e isso tem
 > consequência prática: numa peça digital que use `cor.marca.primaria` ao lado do
 > logotipo, os dois azuis não vão bater.
 >
-> **Para resolver, só duas saídas:** ou o token passa a ser `#00AEEF`, ou o
+> No arquivo o azul é `CMYK 100/0/0/0` (ciano de escala). Em tela, o Illustrator
+> converte para **`#009BDB`** — é esse o valor que o SVG carrega e o que o
+> navegador vai pintar.
+>
+> **Para resolver, só duas saídas:** ou o token passa a ser `#009BDB`, ou o
 > logotipo ganha uma versão oficial em `#007CC2` exportada do Illustrator.
 > Enquanto não se decidir, não use a cor do token encostada no logotipo.
 
