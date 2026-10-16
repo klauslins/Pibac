@@ -16,6 +16,14 @@ Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.0.0/).
 
 ## [Não publicado]
 
+### Decidido — 16/10/2026
+- **A cor principal da igreja é `#007CC2`.** Deixa de ser decisão em aberto. No
+  sistema ela é bloco, fundo, barra e título grande — nunca texto corrido, por
+  causa do contraste de 4,50:1
+- A divergência com o logotipo vira **tarefa, não dúvida**: exportar do
+  Illustrator uma versão do logotipo em `#007CC2` para uso em tela. O arquivo em
+  ciano `CMYK 100/0/0/0` continua valendo para gráfica
+
 ### Adicionado — 16/10/2026 (SVG)
 - `00_BRAND/logo/horizontal/svg/logo-h-completo-v1.svg` — o modelo de nome
   completo em vetor limpo, 8 paths. É o arquivo para web

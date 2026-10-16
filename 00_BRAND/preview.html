@@ -153,7 +153,7 @@ const raiz = getComputedStyle(document.documentElement);
 const ler = n => raiz.getPropertyValue('--pibac-' + n).trim();
 
 const CORES = [
-  ['cor-marca-primaria','Marca','o logotipo — só área, nunca texto'],
+  ['cor-marca-primaria','Marca · principal','bloco, fundo, título — nunca texto corrido'],
   ['cor-marca-clara','Azul claro','fundo de respiro'],
   ['cor-marca-media','Azul médio','apoio, divisória'],
   ['cor-marca-profunda','Azul profundo','fundo escuro, rodapé'],
@@ -188,10 +188,10 @@ document.getElementById('raio').innerHTML =
   }).join('');
 
 document.getElementById('aviso').innerHTML = `
-  <b>O azul do token e o azul do logotipo não são o mesmo.</b><br>
-  Token <code>cor.marca.primaria</code>: <b>${ler('cor-marca-primaria')}</b> ·
-  Logotipo em tela: <b>#009BDB</b> (CMYK 100/0/0/0 no arquivo).<br>
-  Enquanto não se decidir qual vale, não use a cor do token encostada no logotipo.
+  <b>A cor principal da igreja é ${ler('cor-marca-primaria')}</b> — decidido em 16/10/2026.<br>
+  O logotipo em tela ainda sai <b>#009BDB</b> (no arquivo é CMYK 100/0/0/0, para gráfica).
+  Falta exportar do Illustrator uma versão do logotipo em ${ler('cor-marca-primaria')} para tela.<br>
+  Até lá, não encoste a cor do sistema no logotipo.
   <br><br>
   <b>Ainda falta exportar do Illustrator:</b> o SVG do modelo de sigla, o .eps para gráfica,
   as versões vertical e símbolo, a versão branca a partir do vetor — e a onda e o bloco com

@@ -36,7 +36,7 @@ a decisão.
 
 | | Nome | Hex | Token | Papel |
 |---|---|---|---|---|
-| 🔵 | **Marca** | `#007CC2` | `cor.marca.primaria` | **O logotipo.** O ponto mais saturado do sistema — use com parcimônia |
+| 🔵 | **Marca** | `#007CC2` | `cor.marca.primaria` | **A cor principal da igreja.** Bloco, fundo, barra, título grande — nunca texto corrido |
 | 💧 | **Azul claro** | `#AFD4E9` | `cor.marca.clara` | Fundo de respiro, bloco claro |
 | 🩵 | **Azul médio** | `#7A97A8` | `cor.marca.media` | Apoio, divisória, estado desativado |
 | 🟦 | **Azul profundo** | `#475E6B` | `cor.marca.profunda` | Fundo escuro, barra, rodapé |
@@ -48,25 +48,22 @@ Completam o conjunto `cor.neutra.media` `#ABB7C4` (borda, separador) e
 `cor.texto.suave` `#5C727F` (legenda, crédito).
 
 > [!IMPORTANT]
-> **Há duas versões do azul da marca, e isso precisa de uma decisão.**
+> **Decidido em 16/10/2026: a cor principal da igreja é `#007CC2`.**
 >
-> | Origem | Valor | Como foi obtido |
+> | | Valor | Origem |
 > |---|---|---|
-> | **Token do sistema** | `#007CC2` | amostrado do PNG do site da igreja |
-> | **Vetor oficial** | `#009BDB` | do SVG exportado pelo Illustrator, com gestão de cor |
+> | **Cor principal do sistema** | **`#007CC2`** | decisão da igreja |
+> | Logotipo em tela | `#009BDB` | o SVG, exportado pelo Illustrator |
+> | Logotipo no arquivo | `CMYK 100/0/0/0` | ciano de escala |
 >
-> O sistema segue com `#007CC2`, por decisão. Mas o arquivo de marca em
-> [`../logo/horizontal/ai/`](../logo/horizontal/ai/) é **ciano**, e isso tem
-> consequência prática: numa peça digital que use `cor.marca.primaria` ao lado do
-> logotipo, os dois azuis não vão bater.
+> Os dois ainda não batem, e isso tem consequência visível: numa peça que use a
+> cor do sistema ao lado do logotipo, os azuis ficam diferentes.
 >
-> No arquivo o azul é `CMYK 100/0/0/0` (ciano de escala). Em tela, o Illustrator
-> converte para **`#009BDB`** — é esse o valor que o SVG carrega e o que o
-> navegador vai pintar.
+> **O que resolve:** exportar do Illustrator uma versão do logotipo em
+> `#007CC2`, para uso em tela. O arquivo em ciano continua valendo para gráfica,
+> onde a cor é `CMYK 100/0/0/0`.
 >
-> **Para resolver, só duas saídas:** ou o token passa a ser `#009BDB`, ou o
-> logotipo ganha uma versão oficial em `#007CC2` exportada do Illustrator.
-> Enquanto não se decidir, não use a cor do token encostada no logotipo.
+> Até isso acontecer, não encoste a cor do sistema no logotipo.
 
 > [!NOTE]
 > **A cor `tinta` não veio da referência — foi derivada.** A paleta escolhida não

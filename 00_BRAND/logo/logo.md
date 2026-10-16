@@ -28,13 +28,14 @@ Os PNG foram **exportados do próprio vetor**, com transparência. O
 vetor limpo (8 paths). É o arquivo para web e para qualquer aplicação que
 precise escalar sem perda. **O modelo de sigla ainda não tem SVG.**
 
-> **Cor:** no arquivo o azul é **`CMYK 100/0/0/0`**, ciano de escala. Em tela, o
-> SVG exportado pelo Illustrator carrega **`#009BDB`** — é esse o valor que o
-> navegador pinta. O token `cor.marca.primaria` do sistema é `#007CC2`. Ver a
-> nota em [`../cores/paleta.md`](../cores/paleta.md) — decisão em aberto.
+> **Cor:** no arquivo o azul é **`CMYK 100/0/0/0`**, ciano de escala — e é assim
+> que vai para a gráfica. Em tela o SVG carrega **`#009BDB`**, enquanto a cor
+> principal do sistema é **`#007CC2`**. **Falta exportar do Illustrator uma
+> versão do logotipo em `#007CC2` para uso em tela.**
 
 ## Ainda falta
 
+- **Uma versão em `#007CC2`** para tela — é o que fecha a divergência de cor
 - **`.svg` do modelo de sigla** e **`.eps`** para gráfica
 - As versões **vertical** e **símbolo isolado**
 - A versão **branca/monocromática** saída do vetor, não da web
