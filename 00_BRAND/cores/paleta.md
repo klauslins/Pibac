@@ -74,17 +74,39 @@ Completam o conjunto `cor.neutra.media` `#ABB7C4` (borda, separador) e
 
 ---
 
-## Proporção
+## Proporção — a cor principal manda
 
-Ponto de partida que funciona: **60 / 30 / 10**.
+Com `#007CC2` como cor principal, a regra deixa de ser "um acento de 10%".
 
-- **60%** areia ou branco — o fundo respira
-- **30%** azuis (claro, médio, profundo) — blocos, barras, áreas
-- **10%** marca e terra — o acento que chama o olho
+### Cada peça escolhe um dominante
 
-A cor da marca em 10% da área é o que a faz valer. Em 60%, ela cansa.
+Marca **ou** areia. Nunca as duas disputando o mesmo quadro — é isso que faz
+uma peça parecer decidida e a outra parecer indecisa.
 
----
+| A peça é… | Dominante | Como fica |
+|---|---|---|
+| **Convite, chamada, evento** | **Marca** `#007CC2` | Fundo azul, texto **branco** e grande |
+| **Texto, informação, reflexão** | **Areia** `#EFEAE4` | Fundo claro, marca nos títulos e blocos |
+| **Slide de culto, rodapé, barra** | **Azul profundo** `#475E6B` | Fundo escuro, texto areia |
+
+Dentro da peça, como referência: **~50% o dominante · ~35% o par · ~10% os azuis
+de apoio · ~5% terra.** O terra continua sendo detalhe — ele nunca cresce.
+
+> [!CAUTION]
+> **Sobre a cor principal, o texto é branco puro. Só ele.**
+>
+> | Texto sobre `#007CC2` | Contraste | Corpo | Título grande |
+> |---|---|---|---|
+> | **Branco `#FFFFFF`** | 4,50:1 | ✅ | ✅ |
+> | Areia `#EFEAE4` | 3,77:1 | ❌ | ✅ |
+> | Tinta `#242D33` | 3,11:1 | ❌ | ✅ |
+>
+> O reflexo natural é usar a areia em cima do azul, porque ela é a cor clara do
+> sistema. **Reprova para texto corrido.** Em bloco de marca: branco, e de
+> preferência grande.
+>
+> Isso é só para a cor principal. Sobre o **azul profundo** a areia funciona bem
+> (5,70:1) — é lá que ela é a cor de texto certa.
 
 ## Contraste conferido
 

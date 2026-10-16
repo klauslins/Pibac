@@ -17,6 +17,15 @@ Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.0.0/).
 ## [Não publicado]
 
 ### Decidido — 16/10/2026
+- **Proporção refeita para a cor principal liderar.** Deixa de ser "um acento de
+  10%": agora **cada peça escolhe um dominante — marca ou areia** — e nunca as
+  duas disputam o mesmo quadro. Convite domina em azul, texto domina em areia,
+  slide de culto domina em azul profundo
+- **Regra nova que caiu da conta:** sobre a cor principal, o texto é **branco
+  puro e só ele**. Areia dá 3,77:1 e tinta 3,11:1 — as duas reprovam para texto
+  corrido. O reflexo natural seria usar areia, por ser a cor clara do sistema;
+  reprova. Sobre o azul profundo a areia funciona bem (5,70:1), e é lá que ela
+  é a cor de texto certa
 - **A cor principal da igreja é `#007CC2`.** Deixa de ser decisão em aberto. No
   sistema ela é bloco, fundo, barra e título grande — nunca texto corrido, por
   causa do contraste de 4,50:1
