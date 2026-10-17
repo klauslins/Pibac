@@ -104,11 +104,12 @@ const B = {
   titulo: [120, 270],
   data: [250, 430],
   barracas: [410, 700],
-  verso: [680, 810],
+  verso: [660, 900],
   assina: [790, 900],
 } as const;
 
 const vivo = (f: number, [a, b]: readonly [number, number]) => f >= a - 1 && f <= b + 40;
+const ateOFim = (f: number, a: number) => f >= a - 1;
 
 // aparece com amortecimento e sobe 34px
 const entra = (f: number, at: number, dur = 34) => {
@@ -176,7 +177,7 @@ export const Scene: React.FC<SceneProps> = () => {
         <Layer depth={0}>
           {/* 1 — É HOJE! */}
           {vivo(frame, B.hoje) && (
-            <AbsoluteFill style={{ opacity: sai(frame, B.titulo[0] + 40) }}>
+            <AbsoluteFill style={{ opacity: sai(frame, B.titulo[0] - 8, 26) }}>
               <div style={{ position: "absolute", left: M, top: 640 }}>
                 <div
                   style={{
@@ -197,7 +198,7 @@ export const Scene: React.FC<SceneProps> = () => {
 
           {/* 2 — o nome da feira */}
           {vivo(frame, B.titulo) && (
-            <AbsoluteFill style={{ opacity: sai(frame, B.data[0] + 40) }}>
+            <AbsoluteFill style={{ opacity: sai(frame, B.data[0] - 8, 26) }}>
               <div style={{ position: "absolute", left: M, top: 500, width: W - 2 * M }}>
                 <div
                   style={{
@@ -259,7 +260,7 @@ export const Scene: React.FC<SceneProps> = () => {
 
           {/* 3 — quando e onde */}
           {vivo(frame, B.data) && (
-            <AbsoluteFill style={{ opacity: sai(frame, B.barracas[0] + 30) }}>
+            <AbsoluteFill style={{ opacity: sai(frame, B.barracas[0] - 8, 26) }}>
               <div style={{ position: "absolute", left: M, top: 520, width: W - 2 * M }}>
                 <div
                   style={{
@@ -310,7 +311,7 @@ export const Scene: React.FC<SceneProps> = () => {
 
           {/* 4 — as barracas acumulando */}
           {vivo(frame, B.barracas) && (
-            <AbsoluteFill style={{ opacity: sai(frame, B.verso[0] + 30) }}>
+            <AbsoluteFill style={{ opacity: sai(frame, B.verso[0] - 12, 26) }}>
               <div style={{ position: "absolute", left: M, top: 430, width: W - 2 * M }}>
                 <div
                   style={{
@@ -357,8 +358,8 @@ export const Scene: React.FC<SceneProps> = () => {
           )}
 
           {/* 5 — o versículo */}
-          {vivo(frame, B.verso) && (
-            <AbsoluteFill style={{ opacity: sai(frame, B.assina[0] + 24) }}>
+          {ateOFim(frame, B.verso[0]) && (
+            <AbsoluteFill>
               <div style={{ position: "absolute", left: M, top: 720, width: W - 2 * M }}>
                 <div
                   style={{
@@ -396,13 +397,13 @@ export const Scene: React.FC<SceneProps> = () => {
           {vivo(frame, B.assina) && (
             <AbsoluteFill>
               <ShutterBlur active={frame >= B.assina[0] && frame <= B.assina[0] + 14} samples={8}>
-                <div style={{ position: "absolute", left: M, top: 690, width: W - 2 * M }}>
+                <div style={{ position: "absolute", left: M, top: 452, width: W - 2 * M }}>
                   <div
                     style={{
                       fontFamily: ARCHIVO,
                       ...EXPANDED,
                       fontWeight: 900,
-                      fontSize: 168,
+                      fontSize: 150,
                       lineHeight: 0.92,
                       color: MARCA,
                       ...entra(frame, B.assina[0] + 4, 26),
@@ -422,18 +423,6 @@ export const Scene: React.FC<SceneProps> = () => {
                     }}
                   >
                     16H ÀS 22H
-                  </div>
-                  <div
-                    style={{
-                      fontFamily: MONT,
-                      fontWeight: 500,
-                      fontSize: 34,
-                      color: SUAVE,
-                      marginTop: 18,
-                      ...entra(frame, B.assina[0] + 38, 30),
-                    }}
-                  >
-                    Rua Jerivá, Lote 5
                   </div>
                 </div>
               </ShutterBlur>
