@@ -48,7 +48,7 @@ const BRANCO = "#FFFFFF";
 const W = 1080;
 const H = 1920;
 const FPS = 60;
-const TOTAL = 15;
+const TOTAL = 20;
 const M = 92; // margem lateral
 
 const EXPANDED = { fontVariationSettings: "'wdth' 125" } as const;
@@ -99,13 +99,15 @@ const Onda: React.FC<{ y: number; amp: number; fase: number; desenho: number; co
 };
 
 // ───────────────────────────────────────────────── tempos
+// 20s a 60fps = 1200 quadros. As barracas ficam com 420 — sete entradas a
+// cada 30 quadros e ainda ~3,5s com as sete na tela, tempo de ler.
 const B = {
   hoje: [0, 150],
-  titulo: [120, 270],
-  data: [250, 430],
-  barracas: [410, 700],
-  verso: [660, 900],
-  assina: [790, 900],
+  titulo: [130, 290],
+  data: [270, 480],
+  barracas: [460, 880],
+  verso: [860, 1200],
+  assina: [980, 1200],
 } as const;
 
 const vivo = (f: number, [a, b]: readonly [number, number]) => f >= a - 1 && f <= b + 40;
@@ -138,7 +140,7 @@ export const Scene: React.FC<SceneProps> = () => {
     + tween(frame, [B.titulo[0], B.data[0]], [0, 90], ease.glide)
     + tween(frame, [B.data[1] - 60, B.barracas[0] + 60], [0, 260], ease.glide)
     + tween(frame, [B.verso[0], B.verso[0] + 70], [0, -680], ease.glide)
-    + tween(frame, [B.assina[0], B.assina[0] + 70], [0, 390], ease.glide);
+    + tween(frame, [B.assina[0], B.assina[0] + 70], [0, 215], ease.glide);
   const ondaDesenho = tween(frame, [12, 110], [0, 1], ease.glide);
   const ondaAmp = 26
     + tween(frame, [B.data[0], B.data[0] + 60], [0, -16], ease.glide)
@@ -156,11 +158,11 @@ export const Scene: React.FC<SceneProps> = () => {
         keys={[
           { frame: 0, z: -90, y: 10 },
           { frame: sec(2.5, FPS), z: -40 },
-          { frame: sec(4.4, FPS), z: 0, y: 0 },
-          { frame: sec(7.0, FPS), z: 24, ry: 0.5 },
-          { frame: sec(11.6, FPS), z: 54, ry: -0.4 },
-          { frame: sec(13.4, FPS), z: 0, ry: 0, easing: ease.whip },
-          { frame: sec(TOTAL, FPS), z: 22 },
+          { frame: sec(4.8, FPS), z: 0, y: 0 },
+          { frame: sec(8.0, FPS), z: 22, ry: 0.5 },
+          { frame: sec(14.5, FPS), z: 50, ry: -0.4 },
+          { frame: sec(16.6, FPS), z: 0, ry: 0, easing: ease.whip },
+          { frame: sec(TOTAL, FPS), z: 20 },
         ]}
         drift={{ amount: 7, rotate: 0.22 }}
       >
@@ -327,7 +329,7 @@ export const Scene: React.FC<SceneProps> = () => {
                   BARRACAS
                 </div>
                 {BARRACAS.map(([nome, min], i) => {
-                  const at = B.barracas[0] + 26 + i * 28;
+                  const at = B.barracas[0] + 30 + i * 30;
                   const e = entra(frame, at, 30);
                   return (
                     <div
@@ -360,7 +362,7 @@ export const Scene: React.FC<SceneProps> = () => {
           {/* 5 — o versículo */}
           {ateOFim(frame, B.verso[0]) && (
             <AbsoluteFill>
-              <div style={{ position: "absolute", left: M, top: 720, width: W - 2 * M }}>
+              <div style={{ position: "absolute", left: M, top: 985, width: W - 2 * M }}>
                 <div
                   style={{
                     fontFamily: MONT,
@@ -397,7 +399,7 @@ export const Scene: React.FC<SceneProps> = () => {
           {vivo(frame, B.assina) && (
             <AbsoluteFill>
               <ShutterBlur active={frame >= B.assina[0] && frame <= B.assina[0] + 14} samples={8}>
-                <div style={{ position: "absolute", left: M, top: 452, width: W - 2 * M }}>
+                <div style={{ position: "absolute", left: M, top: 470, width: W - 2 * M }}>
                   <div
                     style={{
                       fontFamily: ARCHIVO,
@@ -423,6 +425,18 @@ export const Scene: React.FC<SceneProps> = () => {
                     }}
                   >
                     16H ÀS 22H
+                  </div>
+                  <div
+                    style={{
+                      fontFamily: MONT,
+                      fontWeight: 500,
+                      fontSize: 33,
+                      color: SUAVE,
+                      marginTop: 16,
+                      ...entra(frame, B.assina[0] + 38, 30),
+                    }}
+                  >
+                    Rua Jerivá, Lote 5 · próximo ao colégio CIESB
                   </div>
                 </div>
               </ShutterBlur>
